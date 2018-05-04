@@ -1,0 +1,3 @@
+org\wade\mbus\common\json\Person.class
+org\wade\mbus\common\json\JsonUtilTest.class
+org\wade\mbus\common\jedis\JedisUtilTest.class

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mbus-worker.iml" filepath="$PROJECT_DIR$/mbus-worker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker-app/worker-app.iml" filepath="$PROJECT_DIR$/worker-app/worker-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker-model/worker-model.iml" filepath="$PROJECT_DIR$/worker-model/worker-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker-repository/worker-repository.iml" filepath="$PROJECT_DIR$/worker-repository/worker-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker-service/worker-service.iml" filepath="$PROJECT_DIR$/worker-service/worker-service.iml" />
+    </modules>
+  </component>
+</project>

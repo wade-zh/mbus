@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mbus-common" />
+        <module name="mbus-model" />
+        <module name="mbus-repository" />
+        <module name="mbus-service" />
+        <module name="mbus-web" />
+        <module name="site-common" />
+        <module name="site-model" />
+        <module name="site-repository" />
+        <module name="site-service" />
+        <module name="site-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="mbus-site" target="1.8" />
+      <module name="site-common" target="1.8" />
+      <module name="site-model" target="1.8" />
+      <module name="site-repository" target="1.8" />
+      <module name="site-service" target="1.8" />
+      <module name="site-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

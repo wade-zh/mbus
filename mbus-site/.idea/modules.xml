@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mbus-site.iml" filepath="$PROJECT_DIR$/mbus-site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-common/site-common.iml" filepath="$PROJECT_DIR$/site-common/site-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-model/site-model.iml" filepath="$PROJECT_DIR$/site-model/site-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-repository/site-repository.iml" filepath="$PROJECT_DIR$/site-repository/site-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-service/site-service.iml" filepath="$PROJECT_DIR$/site-service/site-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/site-web/site-web.iml" filepath="$PROJECT_DIR$/site-web/site-web.iml" />
+    </modules>
+  </component>
+</project>

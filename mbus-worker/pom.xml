@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.wade.mbus.worker</groupId>
+    <artifactId>worker-center</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>worker-app</module>
+        <module>worker-service</module>
+        <module>worker-repository</module>
+        <module>worker-model</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.0.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.0.4.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.amqp/spring-amqp -->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>2.0.3.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wade.mbus</groupId>
+            <artifactId>mbus-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>App</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <!-- 指定Main方法入口的class -->
+                            <mainClass>org.wade.mbus.worker.App</mainClass>
+                            <!-- 在jar包的MANIFEST.MF文件中生成Class-Path属性 -->
+                            <addClasspath>true</addClasspath>
+                            <!-- Class-Path 前缀 -->
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                        <!-- 把本地的第三方jar包添加到MANIFEST.MF文件中,可以解压打包后的jar包查看MANIFEST.MF文件 -->
+                        <!--
+                        Class-Path: 指定当前jar包执行所依赖的classpath,包括本地的第三方jar包和maven引入的jar包
+                        Class-Path: lib/slf4j-api-1.7.13.jar lib/junit-3.8.1.jar
+                        Main-Class: 指定当前jar包的入口class
+                        Main-Class: com.birdben.App
+                        -->
+                        <manifestEntries>
+                            <Class-Path>lib/slf4j-api-1.7.13.jar</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- 拷贝依赖的jar包到lib目录 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <!-- ${project.build.directory} 构建目录，缺省为target -->
+                            <outputDirectory>
+                                ${project.build.directory}/lib
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

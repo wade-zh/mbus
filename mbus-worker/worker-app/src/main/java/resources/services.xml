@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- services -->
+
+    <bean id="messageListenerService" class="org.wade.mbus.worker.service.impl.MessageListenServiceImpl">
+        <property name="validateCodeRepository" ref="validateCodeRepository"></property>
+        <property name="jedisUtil" ref="jedisUtil"></property>
+        <property name="redisConfig" ref="redisConfig"></property>
+    </bean>
+
+    <!-- more bean definitions for services go here -->
+
+</beans>

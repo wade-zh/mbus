@@ -1,19 +1,18 @@
 package org.wade.mbus.common.jedis;
 
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 import java.util.concurrent.locks.ReentrantLock;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 public class RedisUtil {
 
     protected static ReentrantLock lockPool = new ReentrantLock();
     protected static ReentrantLock lockJedis = new ReentrantLock();
     protected static final Logger logger = LogManager.getLogger();
-
 
     //可用连接实例的最大数目，默认值为8；
     //如果赋值为-1，则表示不限制；如果pool已经分配了maxActive个jedis实例，则此时pool的状态为exhausted(耗尽)。

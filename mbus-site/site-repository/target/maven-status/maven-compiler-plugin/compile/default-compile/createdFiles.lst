@@ -1,0 +1,2 @@
+org\wade\mbus\site\repository\IMessageRepository.class
+org\wade\mbus\site\repository\impl\MessageRepository.class

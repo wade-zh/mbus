@@ -89,8 +89,7 @@ public class GraphicC6Translator {
      * @return
      * @throws Exception
      */
-    private BufferedImage denoise(File picFile) throws Exception {
-        BufferedImage img = ImageIO.read(picFile);
+    private BufferedImage denoise(BufferedImage img) throws Exception {
         int width = img.getWidth();
         int height = img.getHeight();
         for (int x = 0; x < width; ++x) {
@@ -190,25 +189,11 @@ public class GraphicC6Translator {
      */
     public String translate(byte[] data) {
         InputStream input = new ByteArrayInputStream(data);
-        File file = new File(this.getClass().getResource("/img/temp.gif").getPath());
-        try {
-            OutputStream os = new FileOutputStream(file);
-            int bytesRead = 0;
-            byte[] buffer = new byte[8192];
-            while ((bytesRead = input.read(buffer, 0, 8192)) != -1) {
-                os.write(buffer, 0, bytesRead);
-            }
-            os.write(buffer);
-            os.flush();
-            os.close();
-            input.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         String result = "";
         try {
-            BufferedImage img = denoise(file);
-            List<BufferedImage> listImg = split(img);
+            BufferedImage img = ImageIO.read(input);
+            BufferedImage nImg = denoise(img);
+            List<BufferedImage> listImg = split(nImg);
             Map<BufferedImage, Character> map = loadTrainData();
             for (BufferedImage bi : listImg) {
                 result += recognize(bi, map);
@@ -218,22 +203,4 @@ public class GraphicC6Translator {
         }
         return result;
     }
-
-//    public static void main(String[] args) {
-//        GraphicC6Translator translator = GraphicC6Translator.getInstance();
-//        File testDir = new File("E:/JavaProjects/GraphicCR/reserve/GraphicC/6/raw");
-//        for (File file : testDir.listFiles()) {
-//            if (file.getName().contains("-2")) {
-//                continue;
-//            }
-//            try {
-//                BufferedImage img = translator.denoise(file);
-//                ImageIO.write(img, "PNG", new File(file.getParentFile(),
-//                        file.getName().split("\\.")[0] + "-2.gif"));
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        System.out.println("DONE");
-//    }
 }

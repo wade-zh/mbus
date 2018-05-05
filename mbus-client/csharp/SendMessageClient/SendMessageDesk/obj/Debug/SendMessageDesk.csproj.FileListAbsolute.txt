@@ -1,0 +1,10 @@
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.Form1.resources
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.Properties.Resources.resources
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.csproj.GenerateResource.Cache
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.csproj.CoreCompileInputs.cache
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\bin\Debug\SendMessageDesk.exe.config
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\bin\Debug\SendMessageDesk.exe
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\bin\Debug\SendMessageDesk.pdb
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.exe
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.pdb
+F:\repository\mbus\mbus-client\csharp\SendMessageClient\SendMessageDesk\obj\Debug\SendMessageDesk.csprojResolveAssemblyReference.cache

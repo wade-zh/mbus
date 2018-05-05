@@ -1,6 +1,8 @@
 package org.wade.mbus.worker.service.impl;
 
 import com.rabbitmq.client.Channel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.amqp.core.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +26,8 @@ public class MessageListenServiceImpl implements IMessageListenerService {
     @Autowired
     private RedisConfig redisConfig;
 
+    static final Logger logger = LogManager.getLogger(MessageListenServiceImpl.class);
+
     public IValidateCodeRepository getValidateCodeRepository() {
         return validateCodeRepository;
     }
@@ -34,16 +38,13 @@ public class MessageListenServiceImpl implements IMessageListenerService {
 
     public void onMessage(Message message, Channel channel) throws Exception {
         try {
-            System.out.println("body:" + new String(message.getBody()));
             TransportTemplate model = JsonUtil.getModel(new String(message.getBody()), TransportTemplate.class);
             String vCodeStr = validateCodeRepository.getVCodeStr(model.getData());
-            System.out.println("vCodeStr:" + vCodeStr);
             jedisUtil.setRedisConfig(redisConfig);
-            jedisUtil.put(model.getTicket().toString(), 3600, vCodeStr);
-            System.out.println("update ticket:" + model.getTicket().toString());
+            jedisUtil.put(model.getTicket().toString(), 60, vCodeStr);
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("exception:" + e.toString());
         }
     }
 

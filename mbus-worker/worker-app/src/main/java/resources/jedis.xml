@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="redisConfig" class="org.wade.mbus.common.jedis.RedisConfig">
-        <property name="host" value="192.168.43.108" />
+        <property name="host" value="47.94.107.244" />
         <property name="port" value="6379" />
         <property name="passWord" value="123456" />
     </bean>

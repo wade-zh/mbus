@@ -7,7 +7,7 @@
     <groupId>org.wade.mbus.worker</groupId>
     <artifactId>worker-model</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <packaging>jar</packaging>
     <parent>
         <groupId>org.wade.mbus.worker</groupId>
         <artifactId>worker-center</artifactId>
@@ -15,5 +15,4 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    
 </project>

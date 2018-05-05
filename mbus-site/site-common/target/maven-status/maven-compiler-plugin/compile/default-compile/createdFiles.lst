@@ -1,3 +1,3 @@
+org\wade\mbus\site\common\base64\Base64Util.class
 org\wade\mbus\site\common\rabbitmq\RabbitSource.class
 org\wade\mbus\site\common\rabbitmq\RabbitUtil.class
-org\wade\mbus\site\common\base64\Base64Util.class

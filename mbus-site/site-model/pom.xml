@@ -11,6 +11,7 @@
     <artifactId>site-model</artifactId>
     <groupId>org.wade.mbus</groupId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
 </project>

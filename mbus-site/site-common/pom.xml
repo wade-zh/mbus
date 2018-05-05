@@ -12,6 +12,7 @@
     <groupId>org.wade.mbus</groupId>
     <artifactId>site-common</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->

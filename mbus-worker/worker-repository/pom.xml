@@ -7,24 +7,13 @@
     <groupId>org.wade.mbus.worker</groupId>
     <artifactId>worker-repository</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
+    <packaging>jar</packaging>
     <parent>
         <groupId>org.wade.mbus.worker</groupId>
         <artifactId>worker-center</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
 
 </project>

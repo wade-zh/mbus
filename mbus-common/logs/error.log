@@ -1,0 +1,2 @@
+ERROR [main] 2018-05-04 17:22:17 (RedisUtil.java:64) First create JedisPool error : java.lang.NullPointerException
+ERROR [main] 2018-05-04 17:22:17 (RedisUtil.java:74) Second create JedisPool error : java.lang.NullPointerException

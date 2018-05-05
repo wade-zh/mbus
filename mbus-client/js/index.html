@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mbus-client-js</title>
+</head>
+<body>
+<div id="main" style="border: 1px solid #272822; margin: 0 auto; width: 30%; text-align: center;">
+	<br/>
+	<i>
+		按照正常上传文件的流程处理验证码即可。
+	</i>
+	<br/>
+	<br/>
+	<form id="upload">
+	    <input type="file" id="file">
+	</form>
+	<br/>
+	<i id="vcode_i">验证码：
+		<b id="vcode" style='color: blue'></b>
+	</i>
+	<br/>
+	<br/>
+	<br/>
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+
+ 	$("#file").on("change", function () {
+    	var fd = new FormData();
+    	fd.append("file",this.files[0]);
+    	for (var i = 1; i <= 1; i++) {
+    		send(fd,i);
+    		$("#vcode_i").find("ul").append("<li class='item'>识别"+i+"结果: </li>");
+    	}
+    })
+ 	 
+
+ 	function send(fd,i){
+ 		$.ajax({
+	        type: "post",
+	        url: "http://139.199.211.96:8090/api/upload",
+	        data: fd,
+	        dataType: "json",
+	        contentType: false, 
+            processData: false,
+            cache: false,
+	        success:function (data) {
+	        	if(data.error == 0){
+	            	$("#vcode").text(data.msg);
+	        	}else{
+	            	$("#vcode").text("识别失败");
+	        	}
+	        },
+	        error: function (data) {
+	            console.log(data);
+	        }
+	    });
+ 	}
+</script>
+</body>
+</html>

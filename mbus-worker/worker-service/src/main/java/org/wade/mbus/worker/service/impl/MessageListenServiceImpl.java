@@ -56,7 +56,7 @@ public class MessageListenServiceImpl implements IMessageListenerService {
             TransportTemplate model = JsonUtil.getModel(new String(message.getBody()), TransportTemplate.class);
             // TODO shit code!!!
             // 这个地方由于时间紧迫, 暂时用if..else区分类型...
-            String vCodeStr = null;
+            String vCodeStr = "NULL";
             if (model.getType() == ValidateCodeType.T_DEFAULT) vCodeStr = validateCodeRepositoryImpl.getImageText(model.getData());
             if(model.getType() == ValidateCodeType.T_EN) vCodeStr = eNValidateCodeRepositoryImpl.getImageText(model.getData());
             jedisUtil.setRedisConfig(redisConfig);

@@ -30,20 +30,23 @@
 <script>
 
  	$("#file").on("change", function () {
-    	var fd = new FormData();
-    	fd.append("file",this.files[0]);
     	for (var i = 1; i <= 1; i++) {
-    		send(fd,i);
+    		send(this.files[0],i);
     		$("#vcode_i").find("ul").append("<li class='item'>识别"+i+"结果: </li>");
     	}
     })
  	 
 
  	function send(fd,i){
+
+		var form = new FormData(); 
+		form.append("file", fd);
+		form.append("type", "1");
+		
  		$.ajax({
 	        type: "post",
 	        url: "http://139.199.211.96:8090/api/upload",
-	        data: fd,
+	        data: form,
 	        dataType: "json",
 	        contentType: false, 
             processData: false,

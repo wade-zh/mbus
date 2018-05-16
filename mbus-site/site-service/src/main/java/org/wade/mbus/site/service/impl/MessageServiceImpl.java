@@ -46,8 +46,11 @@ public class MessageServiceImpl implements IMessageService {
             } catch (Exception e) {
                 continue;
             }
-            if (code != null)
+            if (code != null && code != "NULL"){
                 return new HttpResp(0, code);
+            }else if(code != null && code == "NULL"){
+                return new HttpResp(1, code);
+            }
         }
     }
 }

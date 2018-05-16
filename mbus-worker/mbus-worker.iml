@@ -53,5 +53,6 @@
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.5.1" level="project" />
   </component>
 </module>

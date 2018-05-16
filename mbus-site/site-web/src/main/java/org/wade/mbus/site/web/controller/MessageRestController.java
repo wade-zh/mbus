@@ -19,13 +19,14 @@ public class MessageRestController {
     private IMessageService messageService;
 
     @RequestMapping(value = "/upload")
-    public HttpResp upload(@RequestParam("file") MultipartFile file, HttpServletResponse response){
+    public HttpResp upload(@RequestParam("file") MultipartFile file,
+                           @RequestParam("type") Integer type, HttpServletResponse response){
         response.setHeader("Access-Control-Allow-Origin","*");
         response.setHeader("Access-Control-Allow-Methods","POST");
         response.setHeader("Access-Control-Allow-Headers","x-requested-with,content-type");
         if (!file.isEmpty()) {
             try {
-                return messageService.upload(file.getBytes());
+                return messageService.upload(file.getBytes(), type);
             } catch (IOException e) {
                 return new HttpResp(0,"上传图片失败");
             }

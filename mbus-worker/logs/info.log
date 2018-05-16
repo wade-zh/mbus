@@ -178,3 +178,134 @@
  INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-30] 2018-05-04 20:49:08 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@7132a759: tags=[{amq.ctag-w86FeYviB-QOBIMiq_Du8w=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@58e8eb8b Shared Rabbit Connection: SimpleConnection@27fd423d [delegate=amqp://wade@139.199.211.96:5672/, localPort= 58893], acknowledgeMode=AUTO local queue size=0
  INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-31] 2018-05-04 20:49:09 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@67e20b82: tags=[{amq.ctag-IUZ3id9A8YRNvb1D6A7mKQ=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@58e8eb8b Shared Rabbit Connection: SimpleConnection@27fd423d [delegate=amqp://wade@139.199.211.96:5672/, localPort= 58893], acknowledgeMode=AUTO local queue size=0
  INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-32] 2018-05-04 20:49:10 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@3f3ff126: tags=[{amq.ctag-fAICFCFeuF1SFDkofuE3dQ=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@58e8eb8b Shared Rabbit Connection: SimpleConnection@27fd423d [delegate=amqp://wade@139.199.211.96:5672/, localPort= 58893], acknowledgeMode=AUTO local queue size=0
+ INFO [main] 2018-05-16 21:49:37 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5b0abc94: startup date [Wed May 16 21:49:37 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 21:49:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 21:49:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 21:49:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 21:49:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 21:49:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 21:49:39 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:49:39 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:49:39 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#47caedad:0/SimpleConnection@55aa0b0 [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55423]
+ INFO [main] 2018-05-16 21:50:48 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5b0abc94: startup date [Wed May 16 21:50:48 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 21:50:48 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 21:50:48 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 21:50:48 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 21:50:48 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 21:50:48 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 21:50:49 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:50:49 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:50:50 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#47caedad:0/SimpleConnection@2d093a86 [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55472]
+ INFO [main] 2018-05-16 21:51:45 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5b0abc94: startup date [Wed May 16 21:51:45 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 21:51:45 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 21:51:45 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 21:51:45 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 21:51:45 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 21:51:45 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 21:51:47 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:51:47 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:51:47 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#47caedad:0/SimpleConnection@74240379 [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55500]
+ INFO [main] 2018-05-16 21:52:24 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5b0abc94: startup date [Wed May 16 21:52:24 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 21:52:24 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 21:52:24 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 21:52:24 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 21:52:24 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 21:52:24 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 21:52:25 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:52:25 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:52:26 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#387a8303:0/SimpleConnection@40385360 [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55523]
+ INFO [main] 2018-05-16 21:53:03 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 21:53:03 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 21:53:03 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 21:53:03 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 21:53:03 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 21:53:03 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 21:53:03 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 21:53:04 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:53:04 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 21:53:05 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#1caedad:0/SimpleConnection@1852eaf [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55543]
+ INFO [main] 2018-05-16 22:03:29 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:03:29 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:03:29 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:03:29 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:03:29 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:03:29 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:03:29 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:07:46 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:07:46 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:07:46 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:07:46 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:07:46 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:07:46 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:07:46 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:08:31 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:08:31 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:08:31 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:08:31 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:08:31 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:08:31 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:08:31 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:09:32 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:09:32 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:09:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:09:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:09:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:09:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:09:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:10:13 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:10:13 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:10:13 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:10:13 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:10:13 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:10:13 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:10:13 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:10:39 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:10:39 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:10:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:10:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:10:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:10:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:10:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:14:36 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c072cb: startup date [Wed May 16 22:14:36 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:14:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:14:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:14:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:14:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:14:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:14:38 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:14:38 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:14:39 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#139992f:0/SimpleConnection@f035a7 [delegate=amqp://wade@139.199.211.96:5672/, localPort= 55950]
+ INFO [main] 2018-05-16 22:22:32 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ab8268: startup date [Wed May 16 22:22:32 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:22:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:22:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:22:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:22:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:22:32 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:22:34 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:22:34 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:22:34 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#16a7463:0/SimpleConnection@ebcafc [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56159]
+ INFO [main] 2018-05-16 22:27:39 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ab8268: startup date [Wed May 16 22:27:39 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:27:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:27:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:27:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:27:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:27:39 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:27:41 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:27:41 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:27:41 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#fa7ae9:0/SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294]
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:32:11 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@18474a2: tags=[{amq.ctag-MtgiSIG9e1-31J9y85sd7A=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@1c0a945 Shared Rabbit Connection: SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294], acknowledgeMode=AUTO local queue size=0
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-2] 2018-05-16 22:37:33 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@af882b: tags=[{amq.ctag-P19A8I2AvSYkpzCaaQZkzg=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@1c0a945 Shared Rabbit Connection: SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294], acknowledgeMode=AUTO local queue size=0
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-3] 2018-05-16 22:39:18 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@28b62c: tags=[{amq.ctag-p-Zuex7B0niuTUttb3-VYg=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@1c0a945 Shared Rabbit Connection: SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294], acknowledgeMode=AUTO local queue size=0
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-4] 2018-05-16 22:39:30 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@107fac4: tags=[{amq.ctag-AMpD0PeChs83ovAQj7mZbg=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@1c0a945 Shared Rabbit Connection: SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294], acknowledgeMode=AUTO local queue size=0
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-5] 2018-05-16 22:46:31 (SimpleMessageListenerContainer.java:1180) Restarting Consumer@45591c: tags=[{amq.ctag-8d8-jOPdWSCQS5LnWHRAeQ=mbus_queue}], channel=Cached Rabbit Channel: AMQChannel(amqp://wade@139.199.211.96:5672/,1), conn: Proxy@1c0a945 Shared Rabbit Connection: SimpleConnection@1645b0c [delegate=amqp://wade@139.199.211.96:5672/, localPort= 56294], acknowledgeMode=AUTO local queue size=0
+ INFO [main] 2018-05-16 22:58:08 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ab8268: startup date [Wed May 16 22:58:08 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 22:58:08 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 22:58:09 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 22:58:09 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 22:58:09 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 22:58:09 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 22:58:10 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:58:10 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 22:58:11 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#1f227a9:0/SimpleConnection@980c3f [delegate=amqp://wade@139.199.211.96:5672/, localPort= 57246]
+ INFO [main] 2018-05-16 23:02:37 (AbstractApplicationContext.java:589) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1ab8268: startup date [Wed May 16 23:02:37 CST 2018]; root of context hierarchy
+ INFO [main] 2018-05-16 23:02:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/application.xml]
+ INFO [main] 2018-05-16 23:02:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/daos.xml]
+ INFO [main] 2018-05-16 23:02:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/jedis.xml]
+ INFO [main] 2018-05-16 23:02:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/services.xml]
+ INFO [main] 2018-05-16 23:02:37 (XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [resources/rabbit.xml]
+ INFO [main] 2018-05-16 23:02:38 (DefaultLifecycleProcessor.java:351) Starting beans in phase 2147483647
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 23:02:38 (AbstractConnectionFactory.java:455) Attempting to connect to: 139.199.211.96:5672
+ INFO [org.springframework.amqp.rabbit.config.ListenerContainerFactoryBean#0-1] 2018-05-16 23:02:39 (AbstractConnectionFactory.java:463) Created new connection: connectionFactory#fa7ae9:0/SimpleConnection@ebcafc [delegate=amqp://wade@139.199.211.96:5672/, localPort= 57391]

@@ -1,10 +1,13 @@
 package org.wade.mbus.model;
 
+import org.wade.mbus.model.enums.ValidateCodeType;
+
 import java.io.Serializable;
 import java.util.UUID;
 
 public class TransportTemplate implements Serializable{
     private UUID ticket;
+    private ValidateCodeType type;
     private byte[] data;
 
     public UUID getTicket() {
@@ -23,13 +26,23 @@ public class TransportTemplate implements Serializable{
         this.data = data;
     }
 
+
+    public ValidateCodeType getType() {
+        return type;
+    }
+
+    public void setType(ValidateCodeType type) {
+        this.type = type;
+    }
+
+    public TransportTemplate(UUID ticket, ValidateCodeType type, byte[] data) {
+        this.ticket = ticket;
+        this.type = type;
+        this.data = data;
+    }
+
     public TransportTemplate() {
 
     }
 
-    public TransportTemplate(UUID ticket, byte[] data) {
-
-        this.ticket = ticket;
-        this.data = data;
-    }
 }

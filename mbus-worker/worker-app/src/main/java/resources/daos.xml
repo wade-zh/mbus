@@ -4,5 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="validateCodeRepository" class="org.wade.mbus.worker.repository.impl.ValidateCodeRepositoryImpl"></bean>
+    <bean id="validateCodeRepositoryImpl" class="org.wade.mbus.worker.repository.impl.ValidateCodeRepositoryImpl"></bean>
+    <bean id="enValidateCodeRepositoryImpl" class="org.wade.mbus.worker.repository.impl.ENValidateCodeRepositoryImpl"></bean>
 </beans>

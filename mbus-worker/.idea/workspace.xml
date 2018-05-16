@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="app:war" />
+      <artifact name="app:war exploded" />
       <artifact name="mbus-worker:jar" />
     </artifacts-to-build>
   </component>
@@ -38,12 +40,32 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="JNativeUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/JNativeUtil.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="-694">
+              <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dependency-reduced-pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/worker-app/dependency-reduced-pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1296">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -84,6 +106,7 @@
       <find>temp.gif</find>
       <find>temp</find>
       <find>img</find>
+      <find>basicC</find>
     </findStrings>
     <dirStrings>
       <dir>F:\repository\mbus\mbus-worker\worker-service</dir>
@@ -111,13 +134,9 @@
         <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/util/ExtraUtil.java" />
         <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/ExtraUtil.java" />
         <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/ICraphicRepository.java" />
-        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IValidateCodeRepository.java" />
         <option value="$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/IRedisService.java" />
         <option value="$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/impl/RedisServiceImpl.java" />
-        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ValidateCodeRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/config/RedisConfigBean.java" />
-        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/daos.xml" />
-        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/services.xml" />
         <option value="$PROJECT_DIR$/package" />
         <option value="$PROJECT_DIR$/src/main/resources/zip.xml" />
         <option value="$PROJECT_DIR$/worker-service/pom.xml" />
@@ -126,17 +145,27 @@
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/log4j2.component.properties" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/worker-repository/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/GlobalExceptionResolver.java" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/application.xml" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.xml" />
-        <option value="$PROJECT_DIR$/worker-app/pom.xml" />
-        <option value="$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/App.java" />
         <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/GraphicC6Translator.java" />
-        <option value="$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/impl/MessageListenServiceImpl.java" />
         <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/jedis.xml" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/DllExport.java" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/IENExternal.java" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IValidateCodeRepository.java" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IENValidateCodeRepository.java" />
+        <option value="$PROJECT_DIR$/worker-repository/pom.xml" />
+        <option value="$PROJECT_DIR$/worker-app/pom.xml" />
+        <option value="$PROJECT_DIR$/../mbus-common/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/App.java" />
+        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/daos.xml" />
+        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/services.xml" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ValidateCodeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ENValidateCodeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/impl/MessageListenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.xml" />
+        <option value="$PROJECT_DIR$/worker-app/src/main/java/log4j2.xml" />
       </list>
     </option>
   </component>
@@ -167,37 +196,27 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="worker-app" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="worker-center" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="11" />
-    <option name="y" value="-18" />
-    <option name="width" value="1400" />
-    <option name="height" value="992" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -215,6 +234,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,88 +246,54 @@
             <path>
               <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="mbus_worker_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="ValidateCodeRepositoryImpl" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="mbus-worker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mbus-worker" type="462c0819:PsiDirectoryNode" />
-              <item name="worker-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="uitls" type="462c0819:PsiDirectoryNode" />
+              <item name="worker-app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mbus-model" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java" />
+      <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java\resources" />
+      <recent name="F:\repository\mbus\mbus-worker\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.wade.mbus.worker.repository.uitls" />
+      <recent name="org.wade.mbus.worker.repository.uitls.util" />
+      <recent name="org.wade.mbus.worker.repository.uitl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java\resources" />
@@ -315,15 +301,6 @@
       <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java" />
       <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main" />
       <recent name="F:\repository\mbus\mbus-worker\src\main" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.wade.mbus.worker.repository.uitls.util" />
-      <recent name="org.wade.mbus.worker.repository.uitl" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java" />
-      <recent name="F:\repository\mbus\mbus-worker\worker-app\src\main\java\resources" />
-      <recent name="F:\repository\mbus\mbus-worker\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -476,10 +453,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.App" />
-        <item index="1" class="java.lang.String" itemvalue="Maven.worker-center [assembly:single]" />
-        <item index="2" class="java.lang.String" itemvalue="Maven.worker-center [package]" />
-        <item index="3" class="java.lang.String" itemvalue="Maven.worker-center [install:install]" />
+        <item index="0" class="java.lang.String" itemvalue="Maven.worker-center [package]" />
+        <item index="1" class="java.lang.String" itemvalue="Maven.worker-center [install:install]" />
+        <item index="2" class="java.lang.String" itemvalue="Maven.worker-center [assembly:single]" />
+        <item index="3" class="java.lang.String" itemvalue="Application.App" />
         <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -516,27 +493,31 @@
       <workItem from="1525445381477" duration="13000" />
       <workItem from="1525445421104" duration="20000" />
       <workItem from="1525499714360" duration="1261000" />
+      <workItem from="1525790443068" duration="927000" />
+      <workItem from="1526471929108" duration="601000" />
+      <workItem from="1526475019925" duration="8493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71594000" />
+    <option name="totallyTimeSpent" value="81615000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20575693" sideWeight="0.4935484" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20575693" sideWeight="0.4935484" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30594593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17537314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -548,7 +529,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07569297" sideWeight="0.5064516" order="4" side_tool="true" content_ui="tabs" />
@@ -598,12 +578,17 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="29" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>encoder.encode(data)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);</expression-string>
         <language-id>JAVA</language-id>
@@ -644,52 +629,12 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>bi</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/img/1/1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/zip.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/bin/stop.sh" />
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/bin/stop.sh" />
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/build/package.xml" />
-    <entry file="file://$PROJECT_DIR$/package.xml" />
-    <entry file="file://$PROJECT_DIR$/worker-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/build/package.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assembly.xml" />
     <entry file="file://$PROJECT_DIR$/assembly.xml" />
-    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IValidateCodeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/log4j.xml" />
     <entry file="file://$PROJECT_DIR$/../mbus-common/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/daos.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -769,20 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-repository/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/info.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -805,26 +736,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/GlobalExceptionResolver.java" />
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/rabbit.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.0.3.RELEASE/spring-rabbit-2.0.3.RELEASE.jar!/org/springframework/amqp/rabbit/config/spring-rabbit-2.0.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="63" column="29" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,25 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-app/dependency-reduced-pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/application.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -864,28 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/impl/MessageListenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/jedis.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -893,26 +772,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ValidateCodeRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/mbus/worker-app-1.0-SNAPSHOT/org/wade/mbus/worker/repository/uitls/GraphicC6Translator.class" />
-    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/GraphicC6Translator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="194" column="46" lean-forward="false" selection-start-line="194" selection-start-column="46" selection-end-line="194" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-app/target/worker-app-1.0-SNAPSHOT/org/wade/mbus/worker/repository/uitls/GraphicC6Translator.class" />
     <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/JNativeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/GraphicC6Translator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="197" column="35" lean-forward="false" selection-start-line="197" selection-start-column="35" selection-end-line="197" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/uitls/IENExternal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IENValidateCodeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/wade/mbus/mbus-common/1.0-SNAPSHOT/mbus-common-1.0-SNAPSHOT.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mbus-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE-sources.jar!/org/springframework/stereotype/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/IValidateCodeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE-sources.jar!/org/springframework/beans/AbstractNestablePropertyAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ValidateCodeRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/daos.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/org/wade/mbus/worker/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/resources/rabbit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/src/main/java/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/wade/mbus/mbus-model/1.0-SNAPSHOT/mbus-model-1.0-SNAPSHOT.jar!/org/wade/mbus/model/TransportTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1526479214329" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1526479214329" expanded="false" signature="143:238" ph="..." />
+            <marker date="1526479214329" expanded="false" signature="410:421" ph=" { " />
+            <marker date="1526479214329" expanded="false" signature="440:446" ph=" }" />
+            <marker date="1526479214329" expanded="false" signature="486:497" ph=" { " />
+            <marker date="1526479214329" expanded="false" signature="518:524" ph=" }" />
+            <marker date="1526479214329" expanded="true" signature="553:564" ph=" { " />
+            <marker date="1526479214329" expanded="true" signature="581:587" ph=" }" />
+            <marker date="1526479214329" expanded="false" signature="625:636" ph=" { " />
+            <marker date="1526479214329" expanded="false" signature="653:659" ph=" }" />
+            <marker date="1526479214329" expanded="true" signature="698:709" ph=" { " />
+            <marker date="1526479214329" expanded="true" signature="726:732" ph=" }" />
+            <marker date="1526479214329" expanded="false" signature="780:791" ph=" { " />
+            <marker date="1526479214329" expanded="false" signature="808:814" ph=" }" />
+            <marker date="1526479214329" expanded="true" signature="894:983" ph="{...}" />
+            <marker date="1526479214329" expanded="true" signature="1016:1023" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-service/src/main/java/org/wade/mbus/worker/service/impl/MessageListenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="method#setValidateCodeRepositoryImpl#0;class#MessageListenServiceImpl#0" expanded="false" />
+            <element signature="method#seteNValidateCodeRepositoryImpl#0;class#MessageListenServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-repository/src/main/java/org/wade/mbus/worker/repository/impl/ENValidateCodeRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-694">
+          <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-app/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -971,7 +1036,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mbus-worker</last-edited>
+          <last-edited>worker-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -29,7 +29,7 @@
             <rabbit:binding queue="mbus_queue" pattern="mbus_routing"/>
         </rabbit:bindings>
     </rabbit:topic-exchange>
-    <rabbit:listener-container connection-factory="connectionFactory">
+    <rabbit:listener-container connection-factory="connectionFactory"  acknowledge="manual" >
         <rabbit:listener ref="messageListenerService" queue-names="mbus_queue"/>
     </rabbit:listener-container>
     <bean id="jsonMessageConverter" class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>

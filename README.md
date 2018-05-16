@@ -11,3 +11,11 @@
 1、学习TensorFlow API  
 2、识别验证码将使用训练好的神经模型  
 3、这是一个长期计划，要将各个类型验证码识别率训练到90%以上
+
+
+
+## site项目打包  
+    mvn clean package
+
+## worker项目打包  
+	mvn

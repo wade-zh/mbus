@@ -39,7 +39,8 @@ namespace SendMessageDesk
 
             var param = new Dictionary<object, object>
                         {
-                            {"file", System.Text.Encoding.Default.GetString(data)}
+                            {"file", System.Text.Encoding.Default.GetString(data)},
+                            { "type", 0}
                         };
             Thread t = new Thread(new ThreadStart(delegate
             {

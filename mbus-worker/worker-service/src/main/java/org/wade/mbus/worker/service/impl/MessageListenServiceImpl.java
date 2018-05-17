@@ -27,6 +27,18 @@ public class MessageListenServiceImpl implements IMessageListenerService {
     @Qualifier("enValidateCodeRepositoryImpl")
     private IValidateCodeRepository eNValidateCodeRepositoryImpl;
 
+    public IValidateCodeRepository geteNExValidateCodeRepositoryImpl() {
+        return eNExValidateCodeRepositoryImpl;
+    }
+
+    public void seteNExValidateCodeRepositoryImpl(IValidateCodeRepository eNExValidateCodeRepositoryImpl) {
+        this.eNExValidateCodeRepositoryImpl = eNExValidateCodeRepositoryImpl;
+    }
+
+    @Autowired
+    @Qualifier("enExValidateCodeRepositoryImpl")
+    private IValidateCodeRepository eNExValidateCodeRepositoryImpl;
+
     public IValidateCodeRepository getValidateCodeRepositoryImpl() {
         return validateCodeRepositoryImpl;
     }
@@ -57,8 +69,11 @@ public class MessageListenServiceImpl implements IMessageListenerService {
             // TODO shit code!!!
             // 这个地方由于时间紧迫, 暂时用if..else区分类型...
             String vCodeStr = "NULL";
-            if (model.getType() == ValidateCodeType.T_DEFAULT) vCodeStr = validateCodeRepositoryImpl.getImageText(model.getData());
-            if(model.getType() == ValidateCodeType.T_EN) vCodeStr = eNValidateCodeRepositoryImpl.getImageText(model.getData());
+            if (model.getType() == ValidateCodeType.T_DEFAULT) vCodeStr = validateCodeRepositoryImpl.getImageText(model.getData()).trim();
+            if(model.getType() == ValidateCodeType.T_EN) vCodeStr = eNValidateCodeRepositoryImpl.getImageText(model.getData()).trim();
+            if(model.getType() == ValidateCodeType.T_EN_EX) vCodeStr = eNExValidateCodeRepositoryImpl.getImageText(model.getData()).trim();
+            if(vCodeStr.length() < 1) vCodeStr = "NULL";
+            System.out.println("vCodeStr: " + vCodeStr);
             jedisUtil.setRedisConfig(redisConfig);
             jedisUtil.put(model.getTicket().toString(), 60, vCodeStr);
             channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);

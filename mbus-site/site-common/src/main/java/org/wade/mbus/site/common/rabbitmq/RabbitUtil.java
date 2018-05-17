@@ -44,18 +44,16 @@ public class RabbitUtil {
             channel.basicPublish(rabbitSource.getExchange(), rabbitSource.getRoutingKeys(),
                     MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
             System.out.println("publish message:" + rabbitSource + message);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (TimeoutException e) {
-            e.printStackTrace();
-        } finally {
+        } catch (Exception e) {
+            System.out.println(e);
+        }  finally {
             try {
-                channel.close();
-                connection.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (TimeoutException e) {
-                e.printStackTrace();
+                if (channel.isOpen()) {
+                    channel.close();
+                    connection.close();
+                }
+            } catch (Exception e) {
+                System.out.println(e);
             }
         }
         return correlationId.getId();

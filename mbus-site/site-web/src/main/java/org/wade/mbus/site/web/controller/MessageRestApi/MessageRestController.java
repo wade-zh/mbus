@@ -24,7 +24,7 @@ public class MessageRestController {
         if (!file.isEmpty()) {
             try {
                 return messageService.upload(file.getBytes(), type);
-            } catch (IOException e) {
+            } catch (Exception e) {
                 return new HttpResp(0,"Error for uoload");
             }
         }

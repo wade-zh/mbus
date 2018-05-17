@@ -6,4 +6,5 @@
 
     <bean id="validateCodeRepositoryImpl" class="org.wade.mbus.worker.repository.impl.ValidateCodeRepositoryImpl"></bean>
     <bean id="enValidateCodeRepositoryImpl" class="org.wade.mbus.worker.repository.impl.ENValidateCodeRepositoryImpl"></bean>
+    <bean id="enExValidateCodeRepositoryImpl" class="org.wade.mbus.worker.repository.impl.ENExValidateCodeRespositoryImpl"></bean>
 </beans>

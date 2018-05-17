@@ -8,5 +8,9 @@ public enum ValidateCodeType {
     /**
      * 英数类型,可识别纯数字/字母或组合字符
      */
-    T_EN
+    T_EN,
+    /**
+     * 英数类型,可识别纯数字/字母或组合字符,种类多
+     */
+    T_EN_EX
 }

@@ -1,3 +1,4 @@
+org\wade\mbus\worker\repository\impl\ENExValidateCodeRespositoryImpl.class
 org\wade\mbus\worker\repository\uitls\ExtraUtil.class
 org\wade\mbus\worker\repository\impl\ENValidateCodeRepositoryImpl.class
 org\wade\mbus\worker\repository\uitls\JNativeUtil.class

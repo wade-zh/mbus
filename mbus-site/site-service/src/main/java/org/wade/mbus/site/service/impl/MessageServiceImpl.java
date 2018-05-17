@@ -47,8 +47,10 @@ public class MessageServiceImpl implements IMessageService {
                 continue;
             }
             if (code != null && code != "NULL"){
+                redisTemplate.delete(ticket.toString());
                 return new HttpResp(0, code);
             }else if(code != null && code == "NULL"){
+                redisTemplate.delete(ticket.toString());
                 return new HttpResp(1, code);
             }
         }

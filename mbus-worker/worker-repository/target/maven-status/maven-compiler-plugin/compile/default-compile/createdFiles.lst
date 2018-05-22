@@ -4,5 +4,6 @@ org\wade\mbus\worker\repository\impl\ENValidateCodeRepositoryImpl.class
 org\wade\mbus\worker\repository\uitls\JNativeUtil.class
 org\wade\mbus\worker\repository\IValidateCodeRepository.class
 org\wade\mbus\worker\repository\impl\ValidateCodeRepositoryImpl.class
+org\wade\mbus\worker\repository\uitls\ISocketExternal.class
 org\wade\mbus\worker\repository\uitls\IENExternal.class
 org\wade\mbus\worker\repository\uitls\GraphicC6Translator.class

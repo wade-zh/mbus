@@ -10,10 +10,12 @@ import org.springframework.stereotype.Service;
 import org.wade.mbus.common.jedis.JedisUtil;
 import org.wade.mbus.common.jedis.RedisConfig;
 import org.wade.mbus.common.json.JsonUtil;
-import org.wade.mbus.model.enums.ValidateCodeType;
+import org.wade.mbus.worker.model.TcpResp;
 import org.wade.mbus.worker.repository.IValidateCodeRepository;
 import org.wade.mbus.worker.service.IMessageListenerService;
 import  org.wade.mbus.model.*;
+import org.wade.mbus.worker.service.utils.SocketUtil;
+import sun.misc.BASE64Encoder;
 
 @Service
 public class MessageListenServiceImpl implements IMessageListenerService {
@@ -66,17 +68,13 @@ public class MessageListenServiceImpl implements IMessageListenerService {
     public void onMessage(Message message, Channel channel) throws Exception {
         try {
             TransportTemplate model = JsonUtil.getModel(new String(message.getBody()), TransportTemplate.class);
-            // TODO shit code!!!
-            // 这个地方由于时间紧迫, 暂时用if..else区分类型...
-            String vCodeStr = "NULL";
-            if (model.getType() == ValidateCodeType.T_DEFAULT) vCodeStr = validateCodeRepositoryImpl.getImageText(model.getData()).trim();
-            if(model.getType() == ValidateCodeType.T_EN) vCodeStr = eNValidateCodeRepositoryImpl.getImageText(model.getData()).trim();
-            if(model.getType() == ValidateCodeType.T_EN_EX) vCodeStr = eNExValidateCodeRepositoryImpl.getImageText(model.getData()).trim();
-            if(vCodeStr.length() < 1) vCodeStr = "NULL";
-            System.out.println("vCodeStr: " + vCodeStr);
-            jedisUtil.setRedisConfig(redisConfig);
-            jedisUtil.put(model.getTicket().toString(), 60, vCodeStr);
-            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+            // 通过socket完成数据交换
+            BASE64Encoder encoder = new BASE64Encoder();
+            String body = model.getTicket().toString() + "|" + encoder.encode(model.getData());
+            TcpResp tcpResp = SocketUtil.Send("127.0.0.1", 7777, body);
+            if (tcpResp.getRes().equalsIgnoreCase("success")){
+                channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+            }
         } catch (Exception e) {
             logger.error("exception:" + e.toString());
         }

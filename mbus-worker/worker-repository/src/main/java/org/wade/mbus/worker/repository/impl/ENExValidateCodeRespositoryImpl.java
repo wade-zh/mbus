@@ -9,7 +9,8 @@ import sun.misc.BASE64Encoder;
 public class ENExValidateCodeRespositoryImpl implements IValidateCodeRepository {
     @Override
     public String getImageText(byte[] data) {
-        BASE64Encoder encoder = new BASE64Encoder();
-        return IENExternal.Library.GetImageText2(encoder.encode(data));
+        /*BASE64Encoder encoder = new BASE64Encoder();
+        return IENExternal.Library.GetImageText2(encoder.encode(data));*/
+        return null;
     }
 }

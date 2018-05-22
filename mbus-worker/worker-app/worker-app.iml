@@ -28,6 +28,7 @@
     <orderEntry type="module" module-name="worker-service" />
     <orderEntry type="module" module-name="worker-repository" />
     <orderEntry type="library" name="Maven: org.wade.mbus:mbus-model:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="worker-model" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.4.RELEASE" level="project" />

@@ -1,2 +1,4 @@
 org\wade\mbus\worker\service\IMessageListenerService.class
 org\wade\mbus\worker\service\impl\MessageListenServiceImpl.class
+org\wade\mbus\worker\service\utils\SocketUtil.class
+org\wade\mbus\worker\service\impl\SocketMessageListenServiceImpl.class

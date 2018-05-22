@@ -14,6 +14,11 @@
         <property name="redisConfig" ref="redisConfig"></property>
     </bean>
 
+
+    <bean id="socketMessageListenService" class="org.wade.mbus.worker.service.impl.SocketMessageListenServiceImpl">
+        <property name="jedisUtil" ref="jedisUtil"></property>
+        <property name="redisConfig" ref="redisConfig"></property>
+    </bean>
     <!-- more bean definitions for services go here -->
 
 </beans>

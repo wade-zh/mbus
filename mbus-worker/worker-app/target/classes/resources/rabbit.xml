@@ -18,19 +18,21 @@
     <rabbit:connection-factory id="connectionFactory" host="${mq.host}" username="${mq.username}"
                                password="${mq.password}" port="${mq.port}" virtual-host="${mq.v-host}"/>
     <rabbit:admin connection-factory="connectionFactory"/>
-    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory"
-                     exchange="mbus_exchange" routing-key="mbus_routing" message-converter="jsonMessageConverter"/>
+    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory"  message-converter="jsonMessageConverter"/>
     <rabbit:admin connection-factory="connectionFactory"/>
     <rabbit:queue name="mbus_queue"/>
+    <rabbit:queue name="mbus_socket"/>
     <rabbit:topic-exchange name="mbus_exchange">
         <rabbit:bindings>
             <rabbit:binding queue="mbus_queue" pattern="mbus.topic.create"/>
             <rabbit:binding queue="mbus_queue" pattern="mbus.topic.change"/>
             <rabbit:binding queue="mbus_queue" pattern="mbus_routing"/>
+            <rabbit:binding queue="mbus_socket" pattern="socket_routing"/>
         </rabbit:bindings>
     </rabbit:topic-exchange>
     <rabbit:listener-container connection-factory="connectionFactory"  acknowledge="manual" >
         <rabbit:listener ref="messageListenerService" queue-names="mbus_queue"/>
+        <rabbit:listener ref="socketMessageListenService" queue-names="mbus_socket"/>
     </rabbit:listener-container>
     <bean id="jsonMessageConverter" class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>
 </beans>

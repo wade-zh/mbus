@@ -18,10 +18,9 @@ public class App {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("resources/application.xml");
 
-        // 加载英数验证码网络模型
         String path = "C:\\mbus\\";
-        System.load(path + "en_external.dll");
-        NativeLibrary.addSearchPath("en_external.dll", path);
+        System.load(path + "tcp.dll");
+        NativeLibrary.addSearchPath("tcp.dll", path);
 
         System.out.println("Hello world!");
     }

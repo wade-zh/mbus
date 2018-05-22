@@ -27,6 +27,11 @@
             <artifactId>mbus-model</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.wade.mbus.worker</groupId>
+            <artifactId>worker-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

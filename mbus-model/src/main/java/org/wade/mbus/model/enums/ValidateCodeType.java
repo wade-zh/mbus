@@ -6,11 +6,7 @@ public enum ValidateCodeType {
      */
     T_DEFAULT,
     /**
-     * 英数类型,可识别纯数字/字母或组合字符
+     * 英数类型,支持1-10位
      */
-    T_EN,
-    /**
-     * 英数类型,可识别纯数字/字母或组合字符,种类多
-     */
-    T_EN_EX
+    T_EN
 }

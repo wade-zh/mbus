@@ -14,16 +14,25 @@ import java.util.UUID;
 
 @Repository
 public class MessageRepository implements IMessageRepository {
-    @Value("${spring.rabbitmq.queue}")
-    private String queue;
-    @Value("${spring.rabbitmq.exchange}")
+    @Value("${rabbitmq.mbusQueue}")
+    private String mbusQueue;
+    @Value("${rabbitmq.socketQueue}")
+    private String socketQueue;
+    @Value("${spring.rabbitmq.template.exchange}")
     private String exchange;
-    @Value("${spring.rabbitmq.routingKey}")
+    @Value("${spring.rabbitmq.template.routing-key}")
     private String routingKey;
+    @Value("${spring.rabbitmq.template.socket-routing-key}")
+    private String socketRoutingKey;
     @Autowired
     private RabbitUtil rabbitUtil;
 
+    @Override
+    public String pub(String queue, String nRoutingKey,  String ticket, String code) {
+        return rabbitUtil.pub(new RabbitSource(queue, exchange, nRoutingKey), UUID.fromString(ticket), code);
+    }
+
     public String pub(UUID uuid, Integer type, byte[] bytes) {
-        return rabbitUtil.pub(new RabbitSource(queue, exchange, routingKey), uuid, JsonUtil.getJson(new TransportTemplate(uuid, ValidateCodeType.values()[type], bytes)));
+        return rabbitUtil.pub(new RabbitSource(mbusQueue, exchange, routingKey), uuid, JsonUtil.getJson(new TransportTemplate(uuid, ValidateCodeType.values()[type], bytes)));
     }
 }

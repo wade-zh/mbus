@@ -1,170 +1,183 @@
-<!-- 
-   Welcome to see the “JuLang” application source code.
-   We look forward to your feedback to our program.
-   email -> service@julang.store
--->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>mbus免费验证码识别平台</title>
-    <style>
-        li{
-            height:30px;
-            line-height: 30px;
-        }
-
-        a{
-            color: blue;
-        }
-
-        a:active{
-            color: blue;
-        }
-
-        a:hover{
-            color: blue;
-        }
-
-        a:link{
-            color: blue;
-        }
-
-        a:after{
-            color: blue;
-        }
-
-        a:visited{
-            color: blue;
-        }
-        .new {
-            color:red;
-            font-weight: bold;
-        }
-
-        .demo{
-            font-style: italic;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>MBUS - 开源的免费验证码识别平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+	<!-- Framework Css -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/lib/owl.carousel.min.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/lib/slick.css">
+	<!-- Animation -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/lib/animations.min.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700,700i,800,900" rel="stylesheet">
+	<!-- Style Theme -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<!-- Responsive Theme -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
 </head>
 <body>
-<h1>M B U S 开源项目</h1>
-<h2>机器学习, 目前支持识别英数图像验证码类型, 建议先下载Demo测试识别率</h2>
-<h3>这是一个公益性的免费项目，您可以不需经过权限认证即可快速接入SDK</h3>
-<ul>
-    <li>GitHub: <a href="https://github.com/wade-zh/mbus">https://github.com/wade-zh/mbus</a></li>
-    <li class="new">v1.1.0-beta: <a href="https://github.com/wade-zh/mbus/releases/tag/v1.1">https://github.com/wade-zh/mbus/releases/tag/v1.1</a></li>
-    <li>v1.0.0-beta: <a href="https://github.com/wade-zh/mbus/releases/tag/v1.0">https://github.com/wade-zh/mbus/releases/tag/v1.0</a></li>
-</ul>
-<p>为了快速的实现识别多种类型的验证码，我借用了不同作者训练好的神经网络模型，每一份文件目录下我都注明了是哪个作者的作品，如果您不同意请联系我删除！</p>
-<p>由于我个人时间不是太充足，有心要整理出来一个能够基本覆盖互联网验证码类型的模型，英数、汉字、行为、答题等等，但是这个进度可能会很慢，如果您有兴趣，欢迎您fork！</p>
-
-<div
-    <h4>识别成功返回内容(JSON)：</h4>
-    <pre>
-        {
-            "error": 0,
-            "msg": "xxx"
-        }
-    </pre>
-
-    <h4>识别识别返回内容(JSON)：</h4>
-    <pre>
-        {
-            "error": 1,
-            "msg": "Error || NULL"
-        }
-    </pre>
-
-    <h4>类型字段 (Type)：</h4>
-    <pre>
-      /**
-         * 缺省类型,一般用于系统测试
-         */
-        T_DEFAULT = 0,
-        /**
-         * 英数类型,可识别纯数字/字母或组合字符
-         */
-        T_EN = 1,
-        /**
-         * 英数类型,可识别纯数字/字母或组合字符,种类多
-         */
-        T_EN_EX = 2
-    </pre>
-
-</div>
-
-<div style="height: 60px;line-height: 60px">
-    <img src="../1.gif" height="40" width="100"/>
-    <img src="../2.gif" height="40" width="100"/>
-    <img src="../3.gif" height="40" width="100"/>
-    <img src="../4.gif" height="40" width="100"/>
-    <img src="../5.gif" height="40" width="100"/>
-    <img src="../6.gif" height="40" width="100"/>
-    <img src="../7.gif" height="40" width="100"/>
-</div>
-
-<a3 style="background-color: #5cdcaa"><b>上传答题：</b>http://139.199.211.96:8090/api/upload</a3>
-<div class="demo">
-    <div>
-        <h4>Java OkHttp Demo：</h4>
-        <pre>
-        OkHttpClient client = new OkHttpClient();
-
-        MediaType mediaType = MediaType.parse("multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
-        RequestBody body = RequestBody.create(mediaType, "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"file\"; filename=\"[object Object]\"\r\nContent-Type: false\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\n1\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--");
-        Request request = new Request.Builder()
-        .url("http://139.199.211.96:8090/api/upload")
-        .post(body)
-        .addHeader("content-type", "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW")
-        .addHeader("Content-Type", "application/x-www-form-urlencoded")
-        .addHeader("Cache-Control", "no-cache")
-        .build();
-
-        Response response = client.newCall(request).execute();
-    </pre>
-    </div>
-
-
-    <div>
-        <h4>C# RestSharp Demo：</h4>
-        <pre>
-        var client = new RestClient("http://139.199.211.96:8090/api/upload");
-        var request = new RestRequest(Method.POST);
-        request.AddHeader("Cache-Control", "no-cache");
-        request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-        request.AddHeader("content-type", "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
-        request.AddParameter("multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW", "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"file\"; filename=\"[object Object]\"\r\nContent-Type: false\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\n1\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--", ParameterType.RequestBody);
-        IRestResponse response = client.Execute(request);
-    </pre>
-    </div>
-
-
-    <div>
-        <h4>易语言 Demo：</h4>
-        <pre>
-            .版本 2
-
-            .局部变量 header, 文本型
-            .局部变量 url, 文本型
-            .局部变量 api, 文本型
-            .局部变量 bytes, 字节集
-            .局部变量 response, 文本型
-            .局部变量 data, 字节集
-
-            url ＝ “http://验证码地址”
-            api ＝ “http://139.199.211.96:8090/api/upload”
-            bytes ＝ 网页_访问_对象 (url, 0)
-            header ＝ #常量1
-            header ＝ 文本_替换 (header, , , , “{type}”, 到文本 (#缺省类型))
-            data ＝ 子字节集替换 (到字节集 (header), 到字节集 (“{data}”), bytes, , )
-            response ＝ 编码_Utf8到Ansi (网页_访问_对象 (api, 1, , , , #常量2, , , , data))
-        </pre>
-    </div>
-</div>
-
-<i>友情链接：<a href="https://bbs.125.la">精易论坛</a></i>
+<div class="wrapper">
+	<!--===================== Header ========================-->
+	<header>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-3 col-lg-3 col-md-12">
+					<a href="index.html">
+						<span style="font-weight: bold;font-size: 30px;color: #ffffff;font-style: italic;">M B U S<span>
+					</a>
+				</div>
+				<div class="col-xl-9 col-lg-9 col-md-12 text-right">
+					<!--===================== Header Block ========================-->
+					<div class="header-block">
+						<ul class="nav-menu list-unstyled list-inline">
+							<li class="list-inline-item"></li>
+						</ul>
+						<div class="text-center">
+							<a target="_blank" href="tencent://Message/?uin=2175656094" class="blue-brd-btn">联系我</a>
+						</div>
+					</div>
+					<button class="mobile-btn">
+						<span></span>
+					</button>
+					<!--===================== End of Header Block ========================-->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--===================== End of Header ========================-->
+	<!--===================== Slider ========================-->
+	<div class="courusel-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div id="sync1" class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="inside">
+								<h1>免费识别英数类型验证码</h1>
+								<p>使用http协议，方便快捷，多种开发语言SDK</p>
+								<a href="/blog.html" class="blue-brd-btn">查看开发文档</a>
+							</div>
+						</div>
+					</div>
+					<div id="sync2" class="owl-carousel owl-theme">
+						<div class="item">
+						</div>
+						<div class="item">
+						</div>
+						<div class="item">
+						</div>
+					</div><!--owl-carousel-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== End of Slider ========================-->
+	
+	<!--===================== Last Mews ========================-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="last-news-title-wrap text-center">
+					<div class="icon">
+						<img src="../assets/img/news-icon.svg" alt="icon-phone">
+					</div>
+					<h2 class="h2-main">阅读最新动态</h2>
+				</div>
+				<div id="news-owl-carousel" class="owl-carousel news-owl-carousel">
+					<div class="item">
+						<!--===================== Last News ========================-->
+						<article class="post">
+							<div class="last-news-info-wrap">
+								<h4 class="last-news-date">5/22</h4>
+								<a href="https://github.com/wade-zh/mbus/releases/tag/v1.2"><h4 class="last-news-title" style="color:black">版本1.2.0发布</h4></a>
+								<span>* 启用socket完成引擎数据交换</span>
+								<a href="https://github.com/wade-zh/mbus/releases/tag/v1.2" class="read-more-btn">Read More <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="8" viewBox="0 0 11 8"><defs><path id="zqnma3" d="M246.3 6201.78a.31.31 0 0 1 0 .44l-3.26 3.3a.3.3 0 0 1-.44 0 .31.31 0 0 1 0-.45l2.73-2.76h-8.41a.31.31 0 0 1-.31-.31c0-.17.14-.31.3-.31h8.42l-2.73-2.76a.31.31 0 0 1 0-.44.3.3 0 0 1 .44 0z"/></defs><g><g transform="translate(-236 -6198)"><use fill="#20add0" xlink:href="#zqnma3"/></g></g></svg></a>
+							</div>
+						</article>
+						<!--===================== End of Last News ========================-->
+					</div>
+					<div class="item">
+						<!--===================== Last News ========================-->
+						<article class="post">
+							<div class="last-news-info-wrap">
+								<h4 class="last-news-date">5/17</h4>
+								<a href="https://github.com/wade-zh/mbus/releases/tag/v1.1"><h4 class="last-news-title">版本1.1.0发布</h4></a>
+								<span>* 引入多个神经网络模型</span>
+								<a href="https://github.com/wade-zh/mbus/releases/tag/v1.1" class="read-more-btn">Read More <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="8" viewBox="0 0 11 8"><defs><path id="zqnma3" d="M246.3 6201.78a.31.31 0 0 1 0 .44l-3.26 3.3a.3.3 0 0 1-.44 0 .31.31 0 0 1 0-.45l2.73-2.76h-8.41a.31.31 0 0 1-.31-.31c0-.17.14-.31.3-.31h8.42l-2.73-2.76a.31.31 0 0 1 0-.44.3.3 0 0 1 .44 0z"/></defs><g><g transform="translate(-236 -6198)"><use fill="#20add0" xlink:href="#zqnma3"/></g></g></svg></a>
+							</div>
+						</article>
+						<!--===================== End of Last News ========================-->
+					</div>
+					<div class="item">
+						<!--===================== Last News ========================-->
+						<article class="post">
+							<div class="last-news-info-wrap">
+								<h4 class="last-news-date">5/5</h4>
+								<a target="_blank" href="https://github.com/wade-zh/mbus/releases/tag/v1.0"><h4 class="last-news-title">版本1.0.0发布</h4></a>
+								<span>* 高可用分布式的基础架构</span>
+								<a  href="https://github.com/wade-zh/mbus/releases/tag/v1.0" class="read-more-btn">Read More <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="8" viewBox="0 0 11 8"><defs><path id="zqnma2" d="M246.3 6201.78a.31.31 0 0 1 0 .44l-3.26 3.3a.3.3 0 0 1-.44 0 .31.31 0 0 1 0-.45l2.73-2.76h-8.41a.31.31 0 0 1-.31-.31c0-.17.14-.31.3-.31h8.42l-2.73-2.76a.31.31 0 0 1 0-.44.3.3 0 0 1 .44 0z"/></defs><g><g transform="translate(-236 -6198)"><use fill="#20add0" xlink:href="#zqnma2"/></g></g></svg></a>
+							</div>
+						</article>
+						<!--===================== End of Last News ========================-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--===================== End of Last Mews ========================-->
+	<!--===================== Footer ========================-->
+	<footer>
+		<div class="container">
+			<div class="row footer-menu-wrap">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+					<div class="logo">
+						<a href="/"><span style="color:black;font-weight:bold;font-size: 18px;">MBUS</span></a>
+						<p>基于深度学习智能识别图片验证码</p>
+					</div>
+				</div>
+				
+				
+				<div class="col-xl-4 col-lg-6 col-md-12 col-12">
+					<h4 class="title">声明</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">2175656094@qq.com</a></li>
+						<li>网络模型下载于用户开源共享，默认视为可转载，如果侵犯了您的权益，请按照以上联系方式撤除，给您造成不便非常抱歉。</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--===================== Copyright ========================-->
+		<div class="copyright">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-6">
+						<p><img class="svg social-link" src="../assets/img/copyright.svg" alt="images">2018 <a target="_blank" href="https://baike.baidu.com/item/GPL/2357903?fr=aladdin">GPL<a/> License</p>
+					</div>
+					<div class="col-md-6 col-6">
+						<div class="footer-social-wrapper">
+							<a target="_blank" href="https://github.com/wade-zh/mbus">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" t="1526923664629" class="cls-1" style="" viewBox="0 0 3786 1024" version="1.1" p-id="1033" width="65" height="25"><defs><style type="text/css"/></defs><path d="M729.176289 438.294072H410.703618c-7.882987 0-14.977675 6.30639-14.977675 14.977675v155.294843c0 7.882987 6.30639 14.977675 14.977675 14.977675h123.762895v193.133179s-27.590454 9.459584-104.843726 9.459584c-90.654349 0-217.570439-33.108545-217.570439-312.166281s132.43418-316.107775 256.197075-316.107775c107.208622 0 153.718245 18.919169 182.885296 28.378752 9.459584 3.153195 18.13087-6.30639 18.13087-14.977675l35.473441-150.56505c0-3.941493-1.576597-8.671286-5.518091-11.82448C687.396459 40.991532 614.872979 0 430.411085 0 217.570439 0 0 90.654349 0 525.006928c0 434.352579 249.102386 498.993072 459.578137 498.993072 174.214011 0 279.846035-74.100077 279.846035-74.100077 4.729792-2.364896 4.729792-8.671286 4.729793-11.036182V453.271747c0-8.671286-7.094688-14.977675-14.977676-14.977675zM2368.837567 52.027714c0-7.882987-6.30639-14.977675-14.977675-14.977676h-178.943803c-7.882987 0-14.977675 6.30639-14.977675 14.977676v346.063125h-279.057737V52.027714c0-7.882987-6.30639-14.977675-14.977675-14.977676H1686.959199c-7.882987 0-14.977675 6.30639-14.977675 14.977676v937.287144c0 7.882987 6.30639 14.977675 14.977675 14.977675h178.943803c7.882987 0 14.977675-7.094688 14.977675-14.977675V588.070824H2159.938414l-0.788299 401.244034c0 7.882987 6.30639 14.977675 14.977676 14.977675h179.732101c7.882987 0 14.977675-7.094688 14.977675-14.977675V52.027714z" fill="#100E0F" p-id="1034"/><path d="M1067.356428 175.002309c0-64.640493-52.027714-116.668206-115.879908-116.668206s-115.091609 52.027714-115.091609 116.668206c0 64.640493 52.027714 116.668206 115.091609 116.668207 63.852194 0 115.879908-52.027714 115.879908-116.668207zM1054.743649 791.451886V358.675905c0-7.882987-6.30639-14.977675-14.977675-14.977676h-178.943803c-7.882987 0-15.765974 8.671286-15.765974 16.554273v619.602771c0 18.13087 11.036182 23.648961 26.013857 23.648961h160.812933c17.342571 0 22.072363-8.671286 22.072363-23.648961 0.788299-33.108545 0.788299-163.177829 0.788299-188.403387z" fill="#100E0F" p-id="1035"/><path d="M3049.139338 345.274827h-177.367206c-7.882987 0-14.977675 7.094688-14.977675 14.977675V819.830639s-44.933025 33.108545-109.573518 33.108545c-63.852194 0-81.194765-29.167052-81.194765-92.230947V360.252502c0-7.882987-6.30639-14.977675-14.977675-14.977675h-180.5204c-7.882987 0-14.977675 7.094688-14.977676 14.977675v431.199384c0 186.038491 104.055427 231.759815 246.737491 231.759815 117.456505 0 212.052348-64.640493 212.052348-64.640492s4.729792 33.896844 6.306389 37.838337c2.364896 3.941493 7.094688 7.882987 13.401078 7.882987l115.091609-0.788299c7.882987 0 14.977675-7.094688 14.977675-14.977675V359.464203c0-7.094688-6.30639-14.189376-14.977675-14.189376zM3535.51963 324.779061c-100.902232 0-169.484219 44.933025-169.484218 44.933025V52.027714c0-7.882987-6.30639-14.977675-14.977675-14.977676h-179.732102c-7.882987 0-14.977675 6.30639-14.977675 14.977676v937.287144c0 7.882987 6.30639 14.977675 14.977675 14.977675h124.551193c5.518091 0 10.247883-3.153195 12.612779-7.882987 3.153195-4.729792 7.882987-43.356428 7.882987-43.356428s73.311778 69.370285 212.840647 69.370285c163.177829 0 256.985373-82.771363 256.985373-372.076983-0.788299-288.517321-149.776751-325.56736-250.678984-325.567359z m-70.158583 527.371824c-61.487298-1.576597-103.267129-29.95535-103.267129-29.95535V525.795227s40.991532-25.225558 92.230947-29.95535c63.852194-5.518091 125.339492 13.401078 125.339492 166.331024-0.788299 160.812933-28.378753 193.133179-114.30331 189.979984zM1569.502694 343.698229h-134.010777V166.331024c0-7.094688-3.153195-10.247883-11.036182-10.247883h-182.885296c-7.094688 0-11.036182 3.153195-11.036182 10.247883v183.673595s-91.442648 22.072363-97.749038 23.648961c-6.30639 1.576597-11.036182 7.882987-11.036181 14.189376v115.091609c0 8.671286 6.30639 14.977675 14.977675 14.977675h93.807544v277.48114c0 205.745958 144.258661 226.241724 242.007698 226.241724 44.933025 0 97.749038-14.189376 106.420324-17.342571 5.518091-1.576597 8.671286-7.094688 8.671285-13.401078v-126.916089c0-7.882987-7.094688-14.977675-14.977675-14.977675-7.882987 0-27.590454 3.153195-48.874519 3.153194-66.21709 0-88.289453-30.743649-88.289453-70.158583V518.700539h134.010777c7.882987 0 14.977675-6.30639 14.977676-14.977675V358.675905c-0.788299-7.882987-7.094688-14.977675-14.977676-14.977676z" fill="#100E0F" p-id="1036"/></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===================== End of Copyright ========================-->
+	</footer>
+	<!--===================== End of Footer ========================-->
+</div><!--wrapper-->
+<script src="../assets/js/lib/jquery-3.2.1.js"></script>
+<script src="../assets/js/lib/popper.min.js"></script>
+<script src="../assets/js/lib/bootstrap.min.js"></script>
+<script src="../assets/js/lib/owl.carousel.min.js"></script>
+<script src="../assets/js/lib/masonry.pkgd.min.js"></script>
+<script src="../assets/js/lib/slick.min.js"></script>
+<script src="../assets/js/lib/css3-animate-it.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

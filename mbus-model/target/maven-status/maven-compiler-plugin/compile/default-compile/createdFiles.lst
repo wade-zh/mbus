@@ -1,2 +1,3 @@
 org\wade\mbus\model\TransportTemplate.class
+org\wade\mbus\model\CallMsgReq.class
 org\wade\mbus\model\enums\ValidateCodeType.class

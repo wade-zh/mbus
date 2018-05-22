@@ -10,4 +10,9 @@ public class HomeController {
     public String index(){
         return "index";
     }
+
+    @RequestMapping(value = {"/blog", "blog.html"})
+    public String blog(){
+        return "blog";
+    }
 }

@@ -5,6 +5,9 @@ import org.wade.mbus.model.enums.ValidateCodeType;
 import java.io.Serializable;
 import java.util.UUID;
 
+/**
+ * 传输消息请求参数类
+ */
 public class TransportTemplate implements Serializable{
     private UUID ticket;
     private ValidateCodeType type;

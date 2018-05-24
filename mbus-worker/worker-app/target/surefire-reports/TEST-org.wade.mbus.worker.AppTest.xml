@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.wade.mbus.worker.AppTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.wade.mbus.worker.AppTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="E:\java\1u8\jre\bin"/>
@@ -65,5 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="org.wade.mbus.worker.AppTest" name="shouldAnswerWithTrue" time="0.003"/>
+  <testcase classname="org.wade.mbus.worker.AppTest" name="shouldAnswerWithTrue" time="0.002"/>
 </testsuite>

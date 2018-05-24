@@ -71,7 +71,7 @@ public class MessageListenServiceImpl implements IMessageListenerService {
             // 通过socket完成数据交换
             BASE64Encoder encoder = new BASE64Encoder();
             String body = model.getTicket().toString() + "|" + encoder.encode(model.getData());
-            TcpResp tcpResp = SocketUtil.Send("127.0.0.1", 7777, body);
+            TcpResp tcpResp = SocketUtil.send(body);
             if (tcpResp.getRes().equalsIgnoreCase("success")){
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
             }

@@ -57,7 +57,7 @@
     </dependencies>
 
     <build>
-        <finalName>worker-1.2.0</finalName>
+        <finalName>worker-1.2.1</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

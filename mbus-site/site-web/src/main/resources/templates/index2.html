@@ -1,0 +1,170 @@
+<!-- 
+   Welcome to see the “JuLang” application source code.
+   We look forward to your feedback to our program.
+   email -> service@julang.store
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>mbus免费验证码识别平台</title>
+    <style>
+        li{
+            height:30px;
+            line-height: 30px;
+        }
+
+        a{
+            color: blue;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        a:hover{
+            color: blue;
+        }
+
+        a:link{
+            color: blue;
+        }
+
+        a:after{
+            color: blue;
+        }
+
+        a:visited{
+            color: blue;
+        }
+        .new {
+            color:red;
+            font-weight: bold;
+        }
+
+        .demo{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<h1>M B U S 开源项目</h1>
+<h2>机器学习, 目前支持识别英数图像验证码类型, 建议先下载Demo测试识别率</h2>
+<h3>这是一个公益性的免费项目，您可以不需经过权限认证即可快速接入SDK</h3>
+<ul>
+    <li>GitHub: <a href="https://github.com/wade-zh/mbus">https://github.com/wade-zh/mbus</a></li>
+    <li class="new">v1.1.0-beta: <a href="https://github.com/wade-zh/mbus/releases/tag/v1.1">https://github.com/wade-zh/mbus/releases/tag/v1.1</a></li>
+    <li>v1.0.0-beta: <a href="https://github.com/wade-zh/mbus/releases/tag/v1.0">https://github.com/wade-zh/mbus/releases/tag/v1.0</a></li>
+</ul>
+<p>为了快速的实现识别多种类型的验证码，我借用了不同作者训练好的神经网络模型，每一份文件目录下我都注明了是哪个作者的作品，如果您不同意请联系我删除！</p>
+<p>由于我个人时间不是太充足，有心要整理出来一个能够基本覆盖互联网验证码类型的模型，英数、汉字、行为、答题等等，但是这个进度可能会很慢，如果您有兴趣，欢迎您fork！</p>
+
+<div
+    <h4>识别成功返回内容(JSON)：</h4>
+    <pre>
+        {
+            "error": 0,
+            "msg": "xxx"
+        }
+    </pre>
+
+    <h4>识别识别返回内容(JSON)：</h4>
+    <pre>
+        {
+            "error": 1,
+            "msg": "Error || NULL"
+        }
+    </pre>
+
+    <h4>类型字段 (Type)：</h4>
+    <pre>
+      /**
+         * 缺省类型,一般用于系统测试
+         */
+        T_DEFAULT = 0,
+        /**
+         * 英数类型,可识别纯数字/字母或组合字符
+         */
+        T_EN = 1,
+        /**
+         * 英数类型,可识别纯数字/字母或组合字符,种类多
+         */
+        T_EN_EX = 2
+    </pre>
+
+</div>
+
+<div style="height: 60px;line-height: 60px">
+    <img src="../1.gif" height="40" width="100"/>
+    <img src="../2.gif" height="40" width="100"/>
+    <img src="../3.gif" height="40" width="100"/>
+    <img src="../4.gif" height="40" width="100"/>
+    <img src="../5.gif" height="40" width="100"/>
+    <img src="../6.gif" height="40" width="100"/>
+    <img src="../7.gif" height="40" width="100"/>
+</div>
+
+<a3 style="background-color: #5cdcaa"><b>上传答题：</b>http://139.199.211.96:8090/api/upload</a3>
+<div class="demo">
+    <div>
+        <h4>Java OkHttp Demo：</h4>
+        <pre>
+        OkHttpClient client = new OkHttpClient();
+
+        MediaType mediaType = MediaType.parse("multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
+        RequestBody body = RequestBody.create(mediaType, "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"file\"; filename=\"[object Object]\"\r\nContent-Type: false\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\n1\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--");
+        Request request = new Request.Builder()
+        .url("http://139.199.211.96:8090/api/upload")
+        .post(body)
+        .addHeader("content-type", "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW")
+        .addHeader("Content-Type", "application/x-www-form-urlencoded")
+        .addHeader("Cache-Control", "no-cache")
+        .build();
+
+        Response response = client.newCall(request).execute();
+    </pre>
+    </div>
+
+
+    <div>
+        <h4>C# RestSharp Demo：</h4>
+        <pre>
+        var client = new RestClient("http://139.199.211.96:8090/api/upload");
+        var request = new RestRequest(Method.POST);
+        request.AddHeader("Cache-Control", "no-cache");
+        request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+        request.AddHeader("content-type", "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW");
+        request.AddParameter("multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW", "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"file\"; filename=\"[object Object]\"\r\nContent-Type: false\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\n1\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--", ParameterType.RequestBody);
+        IRestResponse response = client.Execute(request);
+    </pre>
+    </div>
+
+
+    <div>
+        <h4>易语言 Demo：</h4>
+        <pre>
+            .版本 2
+
+            .局部变量 header, 文本型
+            .局部变量 url, 文本型
+            .局部变量 api, 文本型
+            .局部变量 bytes, 字节集
+            .局部变量 response, 文本型
+            .局部变量 data, 字节集
+
+            url ＝ “http://验证码地址”
+            api ＝ “http://139.199.211.96:8090/api/upload”
+            bytes ＝ 网页_访问_对象 (url, 0)
+            header ＝ #常量1
+            header ＝ 文本_替换 (header, , , , “{type}”, 到文本 (#缺省类型))
+            data ＝ 子字节集替换 (到字节集 (header), 到字节集 (“{data}”), bytes, , )
+            response ＝ 编码_Utf8到Ansi (网页_访问_对象 (api, 1, , , , #常量2, , , , data))
+        </pre>
+    </div>
+</div>
+
+<i>友情链接：<a href="https://bbs.125.la">精易论坛</a></i>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/*============================================
+=            Style Straight Theme            =
+============================================*/
+.courusel-container {
+  padding: 232px 0 92px;
+  background: url(../img/background-straight.png) no-repeat center;
+  background-size: cover;
+  margin-bottom: 127px;
+}
+.courusel-container:before {
+  bottom: -67px;
+}
+.philosophy-block {
+  margin-bottom: 149px;
+}
+.iphone-block {
+  background: url(../img/iphone-background-straight.png) no-repeat center;
+  background-size: cover;
+  padding: 200px 0 196px 0;
+}
+.our-team {
+  padding: 198px 0 130px 0;
+}
+.price-plan-block {
+  padding: 72px 0 105px 0;
+  margin-bottom: 185px;
+  background: url(../img/background-price-block-straight.png) no-repeat center;
+  background-size: cover;
+}
+footer {
+  padding-top: 105px;
+  margin-top: 115px;
+  min-height: 100%;
+  background: url(../img/bg-footer-straight.png) no-repeat center;
+  background-size: cover;
+}
+.first-section {
+  max-height: 635px;
+  margin-bottom: 140px;
+  background: url(../img/first-section-bg-straight.png) no-repeat;
+  background-size: cover;
+}
+.first-section.not-images {
+  padding: 134px 0 295px;
+  background: url(../img/first-section-not-images-straight.png) no-repeat;
+  background-size: cover;
+}
+.text-about {
+  margin-bottom: 83px;
+}
+.table-currency {
+  margin-top: -357px;
+  margin-bottom: 182px;
+}
+.about-working {
+  padding: 128px 0 89px 0;
+  margin-bottom: 65px;
+  background: url(../img/background-about-straight.png) no-repeat center;
+}
+.team-slider-text {
+  margin-top: 0;
+}
+.contact .first-section.not-images {
+  padding: 134px 0 170px;
+  background: url(../img/first-section-bg-contact-straight.png) no-repeat;
+  background-size: cover;
+}
+.contact-block {
+  margin-top: -255px;
+  margin-bottom: 160px;
+}
+.questions-page .first-section {
+  margin-bottom: 177px;
+  max-height: 610px;
+  background: url(../img/faq-bg-straight.png) no-repeat;
+  background-size: cover;
+}
+.calculator-page .first-section.not-images {
+  padding: 134px 0 170px;
+  background: url(../img/calculator-bg-straight.png) no-repeat;
+  background-size: cover;
+}
+.calculator-page .calculator {
+  margin: -253px 0 213px 0;
+}
+.calculator:before {
+  min-height: 640px;
+  background: url(../img/calculator-bg-straight2.png) no-repeat;
+}
+@media only screen and (min-width: 1441px) {
+  .iphone-block {
+    padding: 275px 0 358px 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .philosophy-block {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .courusel-container {
+    padding: 110px 0 120px;
+  }
+  .philosophy-block {
+    margin-bottom: 40px;
+  }
+  .iphone-block {
+    padding: 148px 0 210px 0;
+  }
+  .our-team {
+    padding: 50px 0 70px 0;
+  }
+  .first-section.not-images {
+    padding: 100px 0 309px;
+  }
+  .table-currency {
+    margin-bottom: 0;
+  }
+  .about-working {
+    padding: 80px 0 150px 0;
+  }
+  .calculator-page .first-section.not-images {
+    padding: 82px 0 125px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer {
+    padding-top: 60px;
+    margin-top: 60px;
+  }
+  .courusel-container {
+    padding: 110px 0 100px;
+  }
+  .iphone-block {
+    padding: 115px 0 180px 0;
+  }
+  .price-plan-block {
+    padding: 70px 0 60px 0;
+    margin-bottom: 60px;
+  }
+  .first-section.not-images {
+    padding: 82px 0 230px;
+  }
+  .calculator-page .calculator {
+    margin: -253px 0 60px 0;
+  }
+  .about-working {
+    padding: 60px 0 10px 0;
+  }
+  .login-page footer,
+  .sign-up footer {
+    padding-top: 60px;
+  }
+}
+/*=====  End of Style Straight Theme  ======*/

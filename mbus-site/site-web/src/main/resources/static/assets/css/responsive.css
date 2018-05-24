@@ -1,0 +1,1151 @@
+/*========================================
+=            Style Responsive            =
+========================================*/
+@media only screen and (min-width: 1441px) {
+  .iphone-block {
+    padding: 275px 0 358px 0;
+  }
+  .price-plan-block {
+    padding: 250px 0 434px 0;
+  }
+  footer {
+    padding-top: 300px;
+  }
+  .courusel-container {
+    padding: 180px 0;
+  }
+  .first-section {
+    padding: 243px 0 0;
+    max-height: 870px;
+  }
+  .first-section.not-images {
+    padding: 186px 0 480px;
+    max-height: 100%;
+  }
+  .about .first-section {
+    padding: 180px 0 70px;
+  }
+  .about-working {
+    padding: 205px 0 360px 0;
+  }
+  .login-page .custom-form,
+  .sign-up .custom-form {
+    margin: 195px auto 55px auto;
+  }
+  .contact .first-section.not-images {
+    padding: 134px 0 530px;
+    max-height: 870px;
+  }
+  .questions-page .first-section {
+    padding: 311px 0 205px 0;
+    max-height: 870px;
+  }
+  .error-page .text {
+    padding: 314px 0 240px 0;
+  }
+  .first-section.bg2 {
+    max-height: 870px;
+    padding: 190px 0 475px;
+  }
+  .calculator-page .calculator {
+    margin: -385px 0 313px 0;
+  }
+  .calculator:before {
+    top: -80px;
+    min-height: 1033px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1340px) {
+  #sync1.owl-theme .owl-next {
+    right: 10px;
+  }
+  #sync1.owl-theme .owl-prev {
+    left: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .our-team .images img {
+    max-width: 220px;
+  }
+  .our-team .images130 img {
+    max-width: 130px;
+  }
+  .our-team .images160 img {
+    width: 160px;
+  }
+  .our-team .images100 img {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .first-section.not-images {
+    max-height: 100%;
+    padding: 350px 0 615px;
+  }
+  .about .first-section {
+    max-height: 100%;
+    padding: 350px 0 197px ;
+  }
+  .contact .first-section.not-images {
+    max-height: 100%;
+    padding: 355px 0 612px 0;
+  }
+  .questions-page .first-section {
+    max-height: 100%;
+    padding: 355px 0 461px 0;
+  }
+  .courusel-container {
+    padding: 524px 0;
+  }
+  .iphone-block {
+    padding: 410px 0 545px 0;
+  }
+  .price-plan-block {
+    padding: 530px 0 617px 0;
+  }
+  .calculator:before {
+    min-height: 1390px;
+  }
+  .calculator-page .calculator {
+    margin: -385px 0 340px 0;
+  }
+  .about-working {
+    padding: 480px 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /*=================================
+  =            Home Page            =
+  =================================*/
+  header .blue-brd-btn,
+  header.fixed .blue-brd-btn,
+  .header-type-2 .blue-brd-btn {
+    margin-left: 5px;
+  }
+  header .nav-menu li,
+  header.fixed .nav-menu li,
+  .header-type-2 .nav-menu li {
+    padding: 35px 6px;
+  }
+  header .nav-menu .sub-menu li a,
+  header.fixed .nav-menu .sub-menu li a,
+  .header-type-2 .nav-menu .sub-menu li a {
+    padding: 0 11px;
+  }
+  #sync1.owl-theme .owl-next {
+    right: 10px;
+  }
+  #sync1.owl-theme .owl-prev {
+    left: 10px;
+  }
+  .reasons-block h2 {
+    padding-right: 0;
+  }
+  .reasons-block .reason-block-cont {
+    margin: 25px 0 40px 0;
+  }
+  .reasons-block .reasons-desc-div h4 {
+    padding-right: 0;
+  }
+  .grid.masonry .grid-item-width2 {
+    width: 50%;
+  }
+  .grid.masonry .grid-item-width1 {
+    width: 25%;
+  }
+  .grid.masonry .grid-item {
+    text-align: center;
+    padding: 0 15px !important;
+  }
+  .grid.masonry .grid-item.text-right,
+  .grid.masonry .grid-item.text-left {
+    text-align: center !important;
+  }
+  .grid.masonry .grid-item:nth-child(2) {
+    padding: 0;
+  }
+  .grid.masonry .grid-item:nth-child(3) {
+    margin-top: 0;
+  }
+  .grid.masonry .grid-item:nth-child(4) {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .grid.masonry .grid-item:nth-child(5) {
+    padding-top: 0;
+    margin-top: 40px;
+  }
+  .grid.masonry .grid-item:nth-child(6) {
+    margin-top: 40px;
+    padding-left: 0;
+  }
+  .philosophy-block {
+    margin-bottom: 80px;
+  }
+  .philosophy-block .philosophy-div2 {
+    padding: 15px 0 0 35px;
+  }
+  .price-plan-block .price-plan-item-inside {
+    padding: 51px 30px 26px 30px;
+  }
+  .price-plan-block .price-plan-icon-wrap {
+    margin: 0 auto 26px;
+  }
+  .reviews-wrapper {
+    margin-bottom: 150px;
+  }
+  .reviews-wrapper .reviews-inside .review-text {
+    padding: 33px 30px 0 30px;
+  }
+  .post .last-news-title {
+    line-height: 22px;
+  }
+  footer .inside,
+  footer .inside-column {
+    padding-left: 0;
+  }
+  /*=====  End of Home Page  ======*/
+  /*===========================================
+  =            Trade Currency Page            =
+  ===========================================*/
+  .table-currency table thead td:nth-child(1) {
+    width: 22%;
+  }
+  .table-currency table thead td:nth-child(3) {
+    width: 16%;
+  }
+  .table-currency table thead td:nth-child(2),
+  .table-currency table thead td:nth-child(4),
+  .table-currency table thead td:nth-child(5),
+  .table-currency table thead td:nth-child(6) {
+    width: 13%;
+  }
+  footer {
+    background-position: center;
+  }
+  /*=====  End of Trade Currency Page  ======*/
+  /*================================
+  =            About Us            =
+  ================================*/
+  .slick-slide {
+    opacity: 0.5;
+  }
+  .slick-slide.slick-active {
+    opacity: 1;
+  }
+  .slick-slide.slick-active .info-team {
+    opacity: 1;
+  }
+  .slick-slide .info-team {
+    opacity: 0;
+  }
+  /*=====  End of About Us  ======*/
+  /*====================================
+  =            Contact Page            =
+  ====================================*/
+  .contact-block .contact-info {
+    padding: 56px 25px 56px 40px;
+  }
+  .contact-block form.custom-form .form-group {
+    width: 230px;
+  }
+  /*=====  End of Contact Page  ======*/
+  /*================================
+  =            Faq page            =
+  ================================*/
+  .questions-page .custom-form .form-group {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .questions-page .custom-form .form-group.first {
+    margin-right: 0;
+  }
+  /*=====  End of Faq page  ======*/
+  /*=================================
+  =            Blog Page            =
+  =================================*/
+  aside {
+    padding-left: 0;
+  }
+  /*=====  End of Blog Page  ======*/
+  /*========================================
+  =            Single Blog Page            =
+  ========================================*/
+  .single-post .post .last-news-title {
+    line-height: normal;
+  }
+  .single-post #news-owl-carousel .last-news-title {
+    line-height: 22px;
+  }
+  /*=====  End of Single Blog Page  ======*/
+  /*=======================================
+  =            Calculator Page            =
+  =======================================*/
+  .calculator:before {
+    background-position: center;
+  }
+  .calculator form .form-group.first input {
+    width: 135px;
+    margin-right: 15px;
+  }
+  .calculator form .form-group select {
+    width: 86px;
+  }
+  .calculator .tab-content .info-button li {
+    width: 47%;
+  }
+  /*=====  End of Calculator Page  ======*/
+  /*==================================
+  =            Login Page            =
+  ==================================*/
+  .login-page .custom-form,
+  .sign-up .custom-form {
+    margin: 172px auto 85px auto;
+  }
+  /*=====  End of Login Page  ======*/
+  /*=======================================
+  =            Error Page Page            =
+  =======================================*/
+  .error-page {
+    background-size: cover;
+  }
+  /*=====  End of Error Page Page  ======*/
+}
+@media only screen and (max-width: 991px) {
+  /*=================================
+  =            Home Page            =
+  =================================*/
+  .courusel-container .main-slider-logo-block img {
+    max-width: 115px;
+  }
+  header,
+  .header-type-2 {
+    padding: 25px 0;
+  }
+  header .header-block,
+  .header-type-2 .header-block {
+    display: none;
+    top: 75px;
+    width: 100%;
+    left: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 9;
+    background: linear-gradient(to bottom, #251541 0%, #321f52 100%);
+  }
+  header .blue-brd-btn,
+  .header-type-2 .blue-brd-btn {
+    margin-left: 0 !important;
+  }
+  header .mobile-btn,
+  .header-type-2 .mobile-btn {
+    position: absolute;
+    top: -40px;
+    right: 15px;
+    display: inline-block;
+  }
+  header .nav-menu,
+  .header-type-2 .nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .nav-menu li,
+  .header-type-2 .nav-menu li {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  header .nav-menu li.top-sub-menu > a,
+  .header-type-2 .nav-menu li.top-sub-menu > a {
+    pointer-events: none;
+  }
+  header .nav-menu li.top-sub-menu:hover,
+  .header-type-2 .nav-menu li.top-sub-menu:hover {
+    background: transparent;
+  }
+  header .nav-menu li.top-sub-menu:hover .sub-menu,
+  .header-type-2 .nav-menu li.top-sub-menu:hover .sub-menu {
+    background: linear-gradient(to bottom, #190a2e 0%, #281643 100%);
+  }
+  header .nav-menu li.top-sub-menu.active,
+  .header-type-2 .nav-menu li.top-sub-menu.active {
+    padding-bottom: 0;
+  }
+  header .nav-menu .sub-menu,
+  .header-type-2 .nav-menu .sub-menu {
+    margin-top: 15px;
+    padding: 17px 0;
+    position: static;
+    opacity: 1;
+    display: none;
+    visibility: visible;
+    background: linear-gradient(to bottom, #190a2e 0%, #281643 100%);
+  }
+  header .nav-menu .sub-menu.active,
+  .header-type-2 .nav-menu .sub-menu.active {
+    display: block;
+  }
+  header.fixed,
+  .header-type-2.fixed {
+    background: linear-gradient(to bottom, #1f0e36 0%, #251541 100%);
+  }
+  header.fixed .mobile-btn span,
+  .header-type-2.fixed .mobile-btn span,
+  header.fixed .mobile-btn span:before,
+  .header-type-2.fixed .mobile-btn span:before,
+  header.fixed .mobile-btn span:after,
+  .header-type-2.fixed .mobile-btn span:after {
+    background-color: #fff;
+  }
+  header.fixed .mobile-btn.active span,
+  .header-type-2.fixed .mobile-btn.active span {
+    background-color: transparent;
+  }
+  header.fixed .nav-menu li,
+  .header-type-2.fixed .nav-menu li {
+    padding: 15px 0;
+  }
+  .philosophy-block .philosophy-div2 {
+    padding: 0;
+  }
+  .philosophy-block .philosophy-div1 {
+    background-size: 85%;
+  }
+  .our-team .text {
+    padding-left: 0;
+  }
+  .grid.masonry .grid-item:nth-child(4) {
+    padding-left: 84px;
+  }
+  .price-plan-block {
+    margin-bottom: 0;
+  }
+  .price-plan-block .custom {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
+  .reviews-wrapper .reviews-inside .review-text {
+    padding: 15px 0 0;
+  }
+  .philosophy-block .philosophy-div2 p {
+    padding-right: 0;
+  }
+  .first-section .cloud {
+    left: 18%;
+  }
+  .first-section .cloud-two {
+    left: 38%;
+  }
+  .first-section .mini-cloud {
+    left: 40%;
+  }
+  /*=====  End of Home Page  ======*/
+  /*======================================
+  =            Trade Currency            =
+  ======================================*/
+  .table-currency table thead td {
+    font-size: 14px;
+  }
+  .table-currency table tbody tr td {
+    font-size: 14px;
+  }
+  #table tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+  #table tbody tr td:first-child {
+    padding-left: 5px;
+  }
+  #table thead td:first-child {
+    padding-left: 5px;
+  }
+  /*=====  End of Trade Currency  ======*/
+  /*==================================
+  =            About Page            =
+  ==================================*/
+  .first-section {
+    max-height: 100%;
+  }
+  .first-section .text h1 {
+    line-height: 51px;
+    font-size: 38px;
+  }
+  .team-slider .info-team p {
+    padding: 0 15px 15px 15px;
+  }
+  .join-us ul li {
+    margin-bottom: 25px;
+  }
+  /*=====  End of About Page  ======*/
+  /*====================================
+  =            Contact page            =
+  ====================================*/
+  .contact-block .contact-info {
+    width: 100%;
+  }
+  .contact-block form.custom-form .form-group {
+    width: 44%;
+  }
+  /*=====  End of Contact page  ======*/
+  /*=================================
+  =            Blog page            =
+  =================================*/
+  .blog .post .last-news-img-wrap img {
+    width: 100%;
+  }
+  .blog .margin-bottom {
+    margin-bottom: 0;
+  }
+  .pagination {
+    margin-bottom: 60px;
+  }
+  /*=====  End of Blog page  ======*/
+  /*=======================================
+  =            Calculator Page            =
+  =======================================*/
+  .calculator-page .calculator {
+    margin: -385px 0 113px 0;
+  }
+  .calculator form .form-group.first input {
+    width: 83%;
+  }
+  /*=====  End of Calculator Page  ======*/
+}
+@media only screen and (max-width: 767px) {
+  /*=================================
+  =            Home Page            =
+  =================================*/
+  header .mobile-btn {
+    right: 15px;
+  }
+  #sync1 .item h1 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  #sync1 .item p {
+    font-size: 14px;
+  }
+  #sync1.owl-theme .owl-nav {
+    display: none;
+  }
+  #sync2 {
+    left: 0;
+  }
+  .courusel-container {
+    padding: 110px 0 120px;
+  }
+  .courusel-container .main-slider-logo-block img {
+    margin: 0 auto;
+  }
+  .h2-main {
+    font-size: 28px;
+  }
+  .philosophy-block {
+    margin-bottom: 40px;
+  }
+  .philosophy-block .philosophy-div1 {
+    background-size: 100%;
+  }
+  .philosophy-block .coin-speacial-block {
+    position: static;
+    margin-top: 15px;
+  }
+  .philosophy-block .philosophy-div2 {
+    padding: 0 15px;
+  }
+  .philosophy-block .philosophy-div2 .h2-main {
+    max-width: 100%;
+  }
+  .philosophy-block .philosophy-div2 p {
+    padding-right: 0;
+  }
+  .iphone-block {
+    padding: 148px 0 210px 0;
+    margin-bottom: 0;
+  }
+  .live-currency .live-currency-div1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .live-currency .live-currency-div2 {
+    padding-right: 15px;
+  }
+  .live-currency .live-currency-cont {
+    width: 68%;
+    margin-left: 28px;
+  }
+  .our-team {
+    padding: 90px 0 70px 0;
+  }
+  .our-team h5 {
+    font-size: 12px;
+  }
+  .our-team span {
+    font-size: 10px;
+  }
+  .our-team .text {
+    margin-bottom: 40px;
+  }
+  .price-plan-block .price-plan-icon-wrap img {
+    max-width: 110px;
+  }
+  .price-plan-block {
+    padding: 110px 0 234px 0;
+  }
+  .price-plan-block .price-plan-item-inside {
+    padding: 30px 15px;
+  }
+  .price-plan-block .custom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .price-plan-block .custom:not(:last-child) {
+    padding-right: 15px;
+  }
+  .reviews-wrapper {
+    margin-bottom: 40px;
+  }
+  .reviews-wrapper .reviews-item {
+    margin-bottom: 40px;
+  }
+  footer {
+    padding-top: 150px;
+    background-size: initial;
+  }
+  footer .logo,
+  footer .inside-column,
+  footer .inside {
+    margin-bottom: 30px;
+  }
+  footer .footer-menu-wrap {
+    margin-bottom: 30px;
+  }
+  /*=====  End of Home Page  ======*/
+  /*===========================================
+  =            Trade Currency Page            =
+  ===========================================*/
+  .first-section.not-images {
+    padding: 100px 0 309px;
+  }
+  .first-section .text {
+    margin-bottom: 30px;
+    max-width: 100%;
+    padding-top: 0;
+  }
+  .table-currency {
+    margin-bottom: 0;
+  }
+  .table-currency table {
+    display: inline-block;
+  }
+  .table-currency table * {
+    display: inline-block;
+  }
+  .table-currency table thead td {
+    text-align: center;
+    float: left;
+    width: 33.3% !important;
+    padding: 20px 0;
+  }
+  .table-currency table thead td:first-child {
+    padding-left: 0;
+  }
+  .table-currency table tbody tr {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .table-currency table tbody tr:nth-child(2n+1) {
+    clear: both;
+  }
+  .table-currency table tbody tr td {
+    width: 100%;
+  }
+  .table-currency table tbody tr td:first-child {
+    padding-left: 0;
+  }
+  /*=====  End of Trade Currency Page  ======*/
+  /*=====================================
+  =            About us Page            =
+  =====================================*/
+  .about-working {
+    padding: 80px 0 150px 0;
+  }
+  .about-working ul li {
+    width: 100%;
+  }
+  .about-working ul li:nth-child(even) {
+    padding-left: 0;
+  }
+  .join-us ul li .see-brd-btn {
+    width: 125px;
+    padding: 14px 0;
+  }
+  /*=====  End of About us Page  ======*/
+  /*====================================
+  =            Contact Page            =
+  ====================================*/
+  .contact-block .bg {
+    padding: 30px;
+  }
+  .contact-block form.custom-form .form-group {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact-block form.custom-form .form-group:nth-child(odd) {
+    margin-right: 0;
+  }
+  .contact-block .contact-info {
+    padding: 30px;
+  }
+  /*=====  End of Contact Page  ======*/
+  /*=================================
+  =            Faq Style            =
+  =================================*/
+  .questions-page .first-section {
+    padding: 100px 0 0;
+  }
+  .questions-page .custom-form {
+    padding: 30px;
+  }
+  .questions-page .cloud {
+    top: 25%;
+  }
+  #accordion .accordion-content {
+    margin-bottom: 15px;
+  }
+  #accordion .accordion-header button {
+    font-size: 16px;
+    padding: 20px;
+  }
+  #accordion .accordion-header button svg {
+    width: 30px;
+  }
+  #accordion .accordion-body {
+    padding: 2px 20px 20px 20px;
+  }
+  #accordion .accordion-body p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  /*=====  End of Faq Style  ======*/
+  /*========================================
+  =            Single Post Page            =
+  ========================================*/
+  .single-post .post {
+    margin-bottom: 60px;
+  }
+  .single-post .post .last-news-title {
+    font-size: 24px;
+  }
+  .single-post .entry-content {
+    margin-bottom: 30px;
+  }
+  .single-post .last-news-info-wrap {
+    margin-bottom: 30px;
+  }
+  .single-post .last-news-img-wrap {
+    margin-bottom: 30px;
+  }
+  .single-post .last-news-img-wrap .last-news-date {
+    bottom: 15px;
+    padding: 12px 33px;
+    font-size: 14px;
+  }
+  .single-post .author {
+    margin: 0 auto 30px;
+  }
+  .single-post .images {
+    margin-bottom: 30px;
+  }
+  .single-post .images img {
+    width: 100%;
+  }
+  /*=====  End of Single Post Page  ======*/
+  /*=======================================
+  =            Calculator Page            =
+  =======================================*/
+  .calculator-page .calculator {
+    margin: -385px 0 60px 0;
+  }
+  .calculator form .form-group.first input {
+    width: 71%;
+  }
+  .calculator .nav-pills li a {
+    margin: 0 25px;
+  }
+  .calculator .tab-content .info-button li {
+    width: 100%;
+  }
+  .calculator .tab-content .info-button li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .calculator .tab-content ul li {
+    height: 104px;
+  }
+  /*=====  End of Calculator Page  ======*/
+  /*==================================
+  =            Error Page            =
+  ==================================*/
+  .error-page .text {
+    padding: 220px 0 13px 0;
+  }
+  .error-page footer {
+    padding-top: 150px;
+  }
+  /*=====  End of Error Page  ======*/
+}
+@media only screen and (max-width: 480px) {
+  /*=================================
+  =            Home Page            =
+  =================================*/
+  #sync1 .item h1 {
+    font-size: 22px;
+  }
+  #sync1 .item p {
+    padding: 0 0 0 10px;
+  }
+  #sync2 {
+    top: 300px;
+  }
+  .courusel-container {
+    padding: 110px 0 100px;
+  }
+  .h2-main {
+    font-size: 22px;
+    line-height: normal;
+  }
+  .reasons-block .reasons-icon-div {
+    margin-right: 20px;
+  }
+  .reasons-block .reason-block-cont {
+    margin: 30px 0;
+  }
+  .reasons-block .reasons-desc-div p {
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .reasons-block .reasons-desc-div h4 {
+    font-size: 16px;
+  }
+  .philosophy-block .coin-speacial-block {
+    width: 250px;
+    padding: 15px;
+  }
+  .philosophy-block .coin-speacial-block h4 {
+    margin-top: 15px;
+  }
+  .philosophy-block .coin-speacial-block p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .iphone-block {
+    padding: 115px 0 180px 0;
+  }
+  .live-currency .live-currency-cont {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .live-currency .live-currency-cont h4 {
+    font-size: 16px;
+  }
+  .live-currency .live-currency-cont p {
+    font-size: 14px;
+  }
+  .our-team h5 {
+    font-size: 16px;
+  }
+  .our-team span {
+    font-size: 14px;
+  }
+  .our-team .images h5 {
+    font-size: 22px;
+  }
+  .our-team .images span {
+    font-size: 16px;
+  }
+  #table b {
+    font-size: 14px;
+  }
+  #table thead td {
+    padding: 15px 0;
+  }
+  #table thead tr td:first-child,
+  #table tbody tr td:first-child {
+    padding-left: 0;
+  }
+  #table tbody tr td:first-child img {
+    margin-right: 12px;
+  }
+  .grid.masonry .grid-item {
+    width: 50%;
+    margin-bottom: 30px;
+    position: static !important;
+    float: left;
+  }
+  .price-plan-block {
+    padding: 110px 0 0;
+  }
+  .price-plan-block .custom {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #news-owl-carousel .owl-dots {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #news-owl-carousel .owl-dots .owl-dot {
+    margin: 0 4px;
+  }
+  footer {
+    padding-top: 100px;
+    background-size: 1080%;
+  }
+  footer .footer-social-wrapper {
+    padding-right: 0;
+  }
+  .copyright p {
+    font-size: 9px;
+  }
+  .copyright p img {
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+  }
+  /*=====  End of Home Page  ======*/
+  /*===========================================
+  =            Trade Currency Page            =
+  ===========================================*/
+  .first-section {
+    padding: 110px 0 0;
+    margin-bottom: 60px;
+  }
+  .first-section .text h1 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .first-section .text span {
+    font-size: 22px;
+  }
+  .first-section.not-images {
+    padding: 110px 0 257px;
+  }
+  .first-section .mini-cloud {
+    left: 75%;
+  }
+  .first-section .mini-cloud.two {
+    top: 42%;
+    left: 6%;
+  }
+  .first-section .cloud {
+    left: 56%;
+    top: 41%;
+  }
+  .first-section .cloud-two {
+    display: none;
+  }
+  .about .first-section {
+    padding: 120px 0 0 ;
+  }
+  .about .first-section .text {
+    text-align: center;
+  }
+  .about .first-section .text span {
+    justify-content: center;
+  }
+  .about .first-section .text span .line:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 0;
+    display: inline-block;
+  }
+  .questions-page .first-section {
+    padding: 120px 0 0;
+  }
+  .questions-page .first-section .text {
+    text-align: center;
+  }
+  .questions-page .first-section .text h1 {
+    line-height: normal;
+  }
+  .questions-page .first-section .cloud {
+    display: none;
+  }
+  .questions-page .first-section .mini-cloud {
+    top: 15%;
+  }
+  .questions-page .first-section .mini-cloud.two {
+    top: 24%;
+  }
+  .table-currency {
+    margin-top: -300px;
+  }
+  .table-currency table thead td {
+    padding: 15px 0;
+    width: 50% !important;
+  }
+  .join-us ul li .see-brd-btn {
+    font-size: 14px;
+  }
+  .join-us ul li h4 {
+    font-size: 16px;
+  }
+  .join-us ul li p {
+    font-size: 14px;
+  }
+  /*=====  End of Trade Currency Page  ======*/
+  /*====================================
+  =            Contact Page            =
+  ====================================*/
+  .contact-block .bg,
+  .contact-block .contact-info {
+    padding: 15px;
+  }
+  .contact-block h4 {
+    margin-bottom: 30px;
+  }
+  .contact-block .contact-info h4 {
+    margin-bottom: 30px;
+  }
+  .contact-block .contact-info .footer-social-wrapper {
+    margin-top: 30px;
+  }
+  .contact-block .contact-info ul li:not(:last-child) {
+    padding-bottom: 20px;
+  }
+  /*=====  End of Contact Page  ======*/
+  /*================================
+  =            Faq page            =
+  ================================*/
+  .questions-page .custom-form {
+    padding: 15px;
+  }
+  .questions-page .custom-form h4 {
+    margin-bottom: 30px;
+  }
+  #accordion .accordion-header {
+    position: relative;
+  }
+  #accordion .accordion-header button {
+    padding: 20px 25px 20px 20px;
+  }
+  #accordion .accordion-header button svg {
+    width: 25px;
+    right: 5px;
+  }
+  .contact-block {
+    margin-top: -300px;
+  }
+  /*=====  End of Faq page  ======*/
+  /*======================================
+  =            Blog List Page            =
+  ======================================*/
+  .header-type-2 {
+    margin-bottom: 60px;
+  }
+  .post.list .last-news-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  /*=====  End of Blog List Page  ======*/
+  /*========================================
+  =            Single Post Page            =
+  ========================================*/
+  .single-post .post .last-news-title {
+    font-size: 18px;
+  }
+  .single-post .post .last-news-img-wrap .last-news-date {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .single-post .post-footer {
+    flex-direction: column;
+  }
+  .single-post .post-footer .tags {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .single-post #news-owl-carousel .owl-dots .owl-dot {
+    margin: 0 4px;
+  }
+  blockquote p {
+    padding: 0 0 0 30px;
+  }
+  /*=====  End of Single Post Page  ======*/
+  /*=======================================
+  =            Calculator Page            =
+  =======================================*/
+  .calculator form .form-group {
+    padding: 15px;
+  }
+  .calculator form .form-group.first input {
+    width: 56%;
+  }
+  .calculator .nav-pills li a {
+    margin: 0 8px;
+    font-size: 16px;
+    padding: 16px 0;
+  }
+  .calculator .tab-content ul li output {
+    overflow: hidden;
+    margin: 12px auto 0 auto;
+  }
+  .calculator .tab-content ul:not(.info-button).list-unstyled li output {
+    width: 62px;
+  }
+  .calculator .tab-content .info-button.list-unstyled li {
+    font-size: 14px;
+  }
+  .calculator .tab-content .info-button.list-unstyled li output {
+    font-size: 16px;
+  }
+  .calculator .tab-content .list-unstyled li {
+    height: 70px;
+    font-size: 11px;
+    padding: 10px 5px;
+  }
+  .calculator .tab-content .list-unstyled li output {
+    font-size: 12px;
+  }
+  .calculator-page .calculator {
+    margin: -300px 0 60px 0;
+  }
+  /*=====  End of Calculator Page  ======*/
+  /*==================================
+  =            Login page            =
+  ==================================*/
+  .login-page .custom-form,
+  .sign-up .custom-form {
+    width: 100%;
+    padding: 15px;
+    margin: 172px auto 0 auto;
+  }
+  .login-page footer,
+  .sign-up footer {
+    padding-top: 60px;
+    margin-top: 60px;
+  }
+  /*=====  End of Login page  ======*/
+  /*==================================
+  =            Error Page            =
+  ==================================*/
+  .error-page .text {
+    padding: 150px 0 13px 0;
+  }
+  .error-page .text h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .error-page footer {
+    padding-top: 150px;
+  }
+  /*=====  End of Error Page  ======*/
+}
+/*=====  End of Style Responsive  ======*/

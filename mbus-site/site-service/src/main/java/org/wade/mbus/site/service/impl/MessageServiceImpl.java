@@ -41,7 +41,7 @@ public class MessageServiceImpl implements IMessageService {
         String mid = messageRepository.pub(ticket, type, bytes);
         // 设置超时时间并且开始轮询验证码
         final Long startTime = System.currentTimeMillis();
-        final Long overtime = 10 * 1000L;
+        final Long overtime = 30 * 1000L;
         while (true) {
             // 判断是否超过了预设的时间
             Long nowTime = System.currentTimeMillis();

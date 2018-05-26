@@ -1,5 +1,6 @@
 package org.wade.mbus.site.service.impl;
 
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -10,10 +11,13 @@ import org.wade.mbus.common.json.JsonUtil;
 import org.wade.mbus.model.CallMsgReq;
 import org.wade.mbus.model.enums.ValidateCodeType;
 import org.wade.mbus.site.common.base64.Base64Util;
+import org.wade.mbus.site.common.encoding.UrlUtil;
 import org.wade.mbus.site.model.HttpResp;
 import org.wade.mbus.site.repository.IMessageRepository;
 import org.wade.mbus.site.service.IMessageService;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -35,13 +39,13 @@ public class MessageServiceImpl implements IMessageService {
     private String socketRoutingKey;
 
     @Override
-    public HttpResp upload(byte[] bytes, Integer type) {
+    public HttpResp upload(byte[] bytes, Integer type) throws UnsupportedEncodingException {
         // 生成票据等身份认证信息
         UUID ticket = UUID.randomUUID();
         String mid = messageRepository.pub(ticket, type, bytes);
         // 设置超时时间并且开始轮询验证码
         final Long startTime = System.currentTimeMillis();
-        final Long overtime = 30 * 1000L;
+        final Long overtime = 60 * 1000L;
         while (true) {
             // 判断是否超过了预设的时间
             Long nowTime = System.currentTimeMillis();
@@ -55,6 +59,7 @@ public class MessageServiceImpl implements IMessageService {
             }
             if (code != null && code != "null"){
                 redisTemplate.delete(ticket.toString());
+                System.out.println(code);
                 return new HttpResp(0, code);
             }else if(code != null && code == "null"){
                 redisTemplate.delete(ticket.toString());

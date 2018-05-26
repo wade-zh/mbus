@@ -56,7 +56,7 @@
                 <article class="post">
                     <div class="last-news-info-wrap">
                         <div class="line">&nbsp;</div>
-                        <h4 class="last-news-title">开发文档临时版</h4>
+                        <h4 class="last-news-title">开发文档</h4>
                     </div>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3">
@@ -74,12 +74,15 @@
                             <!--===================== Entry Content ========================-->
                             <div class="entry-content">
 
-                                <p>目前支持识别英数图像验证码类型, 建议先下载Demo测试识别率</p>
+                                <p>目前支持识别汉英图像验证码类型, 建议先下载Demo测试识别率</p>
                                 <p>这是一个公益性的免费项目，您可以不需经过权限认证即可快速接入</p>
-                                <p>由于我个人时间不是太充足，有心要整理出来一个能够基本覆盖互联网验证码类型的模型，英数、汉字、行为、答题等等，但是这个进度可能会很慢，如果您有兴趣，欢迎您fork！</p>
                                 <blockquote>
                                     <p>为了快速的实现识别多种类型的验证码，我借用了不同作者训练好的神经网络模型，每一份文件目录下我都注明了是哪个作者的作品，如果您不同意请联系我删除！</p>
+                                    <p>感谢兴国软件网、红叶分享的英数、汉字训练模型</p>
                                 </blockquote>
+                                <p>现已支持多线程模型异步返回验证码结果，平均响应在0s ~ 2s之间</p>
+                                <blockquote>
+                                    <img src="../multi_thread.gif" height="340" width="575"/></blockquote>
                                 <p></p><h4>识别成功返回内容(JSON)：</h4>
                                 <pre>        {
             "error": 0,
@@ -104,9 +107,19 @@
         T_DEFAULT = 0,
 
         /**
-         * 英数类型,可识别纯数字/字母或组合字符
+         * 英数类型,支持多线程调用, 速度快, 识别率一般
          */
-        T_EN = 1
+        T_EN_XG = 1,
+
+        /**
+         * 英数类型,不支持多线程, 速度慢, 识别率高
+         */
+        T_EN_HY = 2,
+
+         /**
+         * 汉字类型,支持多线程调用, 速度快, 识别率一般
+         */
+        T_ZH_XG = 3
     </pre>
                                 <p></p>
                                 <p><b>支持验证码类型(不局限于以下几种):</b><br> <img src="../1.gif" height="40" width="100">
@@ -116,6 +129,12 @@
                                     <img src="../5.gif" height="40" width="100">
                                     <img src="../6.gif" height="40" width="100">
                                     <img src="../7.gif" height="40" width="100"></p>
+                                <p><b>仅支持的汉字验证码类型:</b><br>
+                                    <img src="../8.gif" height="40" width="100">
+                                    <img src="../9.gif" height="40" width="100">
+                                    <img src="../10.gif" height="40" width="100">
+                                    <img src="../11.gif" height="40" width="100">
+                                </p>
                                 <blockquote>
                                     <p><b>上传答题：</b>http://139.199.211.96:8090/api/upload</p>
                                 </blockquote>

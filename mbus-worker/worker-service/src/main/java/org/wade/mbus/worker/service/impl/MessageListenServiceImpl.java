@@ -67,10 +67,11 @@ public class MessageListenServiceImpl implements IMessageListenerService {
 
     public void onMessage(Message message, Channel channel) throws Exception {
         try {
+            logger.debug(message);
             TransportTemplate model = JsonUtil.getModel(new String(message.getBody()), TransportTemplate.class);
             // 通过socket完成数据交换
             BASE64Encoder encoder = new BASE64Encoder();
-            String body = model.getTicket().toString() + "|" + encoder.encode(model.getData());
+            String body =  model.getType().ordinal() + "|" + model.getTicket().toString() + "|" + encoder.encode(model.getData());
             TcpResp tcpResp = SocketUtil.send(body);
             if (tcpResp.getRes().equalsIgnoreCase("success")){
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);

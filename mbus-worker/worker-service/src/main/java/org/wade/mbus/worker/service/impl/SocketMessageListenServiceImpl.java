@@ -1,6 +1,7 @@
 package org.wade.mbus.worker.service.impl;
 
 import com.rabbitmq.client.Channel;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.amqp.core.Message;
@@ -13,6 +14,12 @@ import org.wade.mbus.model.CallMsgReq;
 import org.wade.mbus.model.TransportTemplate;
 import org.wade.mbus.model.enums.ValidateCodeType;
 import org.wade.mbus.worker.service.IMessageListenerService;
+import org.wade.mbus.worker.service.utils.LanguageUtil;
+import org.wade.mbus.worker.service.utils.UrlUtil;
+import sun.misc.BASE64Encoder;
+
+import java.net.URLEncoder;
+import java.nio.charset.Charset;
 
 /**
  * socket消息监听器
@@ -32,9 +39,10 @@ public class SocketMessageListenServiceImpl implements IMessageListenerService {
     @Override
     public void onMessage(Message message, Channel channel) throws Exception {
         try {
+            logger.debug(message);
             CallMsgReq model = JsonUtil.getModel(new String(message.getBody()), CallMsgReq.class);
             jedisUtil.setRedisConfig(redisConfig);
-            boolean flag = jedisUtil.put(model.getTicket().toString(), 60, model.getCode());
+            boolean flag = jedisUtil.put(model.getTicket().toString(), 60, LanguageUtil.isChinese(model.getCode()) ? UrlUtil.getURLEncoderString(model.getCode().trim()) : model.getCode().trim());
             if (flag){
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
             }

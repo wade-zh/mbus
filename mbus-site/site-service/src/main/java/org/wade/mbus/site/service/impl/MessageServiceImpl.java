@@ -81,6 +81,7 @@ public class MessageServiceImpl implements IMessageService {
         Object ret = redisTemplate.opsForValue().get(ticket.toString());
         String code = null;
         if(ret != null) code = ret.toString();
+        System.out.println(code);
         if (code != null && code != "null"){
             redisTemplate.delete(ticket.toString());
             return new HttpResp(0, code);

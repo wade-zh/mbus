@@ -38,6 +38,13 @@ public class MessageServiceImpl implements IMessageService {
     @Value("${spring.rabbitmq.template.socket-routing-key}")
     private String socketRoutingKey;
 
+    /**
+     * 同步机制上传答题验证码
+     * @param bytes
+     * @param type
+     * @return
+     * @throws UnsupportedEncodingException
+     */
     @Override
     public HttpResp upload(byte[] bytes, Integer type) throws UnsupportedEncodingException {
         // 生成票据等身份认证信息
@@ -68,6 +75,12 @@ public class MessageServiceImpl implements IMessageService {
         }
     }
 
+    /**
+     * 异步机制上传答题验证码
+     * @param bytes
+     * @param type
+     * @return
+     */
     @Override
     public HttpResp uploadAsync(byte[] bytes, Integer type) {
         // 生成票据等身份认证信息
@@ -76,6 +89,11 @@ public class MessageServiceImpl implements IMessageService {
         return new HttpResp(0, mid);
     }
 
+    /**
+     * 根据ticket查询验证码
+     * @param ticket
+     * @return
+     */
     @Override
     public HttpResp getResult(String ticket) {
         Object ret = redisTemplate.opsForValue().get(ticket.toString());
@@ -92,9 +110,21 @@ public class MessageServiceImpl implements IMessageService {
          return new HttpResp(-1, "wait");
     }
 
+    /**
+     * 工作终端回调结果
+     * @param callMsgReq
+     * @return
+     */
     @Override
     public HttpResp update(CallMsgReq callMsgReq) {
         String mid = messageRepository.pub(socketQueue, socketRoutingKey, callMsgReq.getTicket(), JsonUtil.getJson(callMsgReq));
         return new HttpResp(0, mid.isEmpty() ? "faild" : "success");
     }
+
+    @Override
+    public HttpResp getServerCount() {
+        Object ret = redisTemplate.opsForValue().get("serverCount");
+        return new HttpResp(0, ret.toString());
+    }
+
 }

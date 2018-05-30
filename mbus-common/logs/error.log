@@ -1,2 +1,3 @@
 ERROR [main] 2018-05-04 17:22:17 (RedisUtil.java:64) First create JedisPool error : java.lang.NullPointerException
 ERROR [main] 2018-05-04 17:22:17 (RedisUtil.java:74) Second create JedisPool error : java.lang.NullPointerException
+ERROR [main] 2018-05-30 14:11:14 (RedisUtil.java:106) Get jedis error : redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool

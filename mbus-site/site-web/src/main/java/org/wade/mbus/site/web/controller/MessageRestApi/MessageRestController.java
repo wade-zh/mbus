@@ -68,4 +68,10 @@ public class MessageRestController {
     public HttpResp update(CallMsgReq msg){
         return messageService.update(msg);
     }
+
+
+    @RequestMapping(value = "/getServerCount")
+     public HttpResp getServerCount() {
+        return messageService.getServerCount();
+     }
 }

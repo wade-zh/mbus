@@ -27,4 +27,11 @@ public class JedisUtil{
         String result = jedis.get(key);
         return result;
     }
+
+
+    public boolean incr(String key){
+        Jedis jedis = RedisUtil.getJedis();
+        Long result = jedis.incrBy(key,1);
+        return result != 0;
+    }
 }

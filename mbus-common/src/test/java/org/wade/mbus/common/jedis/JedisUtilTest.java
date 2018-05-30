@@ -18,4 +18,11 @@ public class JedisUtilTest extends JedisUtil {
         logger.info(result);
         System.out.println(result);
     }
+
+    @Test
+    public void testIncr() {
+        super.setRedisConfig(new RedisConfig("47.94.107.244", 6379, "123456"));
+        boolean result = super.incr("serverCount");
+        assertTrue(result);
+    }
 }

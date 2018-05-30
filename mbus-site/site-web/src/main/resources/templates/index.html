@@ -37,6 +37,7 @@
 							<li class="list-inline-item"></li>
 						</ul>
 						<div class="text-center">
+							<span style="color: #ffffff">已为用户提供<b id="serverCount" style="padding-left: 5px;padding-right: 5px">0</b>次识别服务</span>
 							<a target="_blank" href="tencent://Message/?uin=2175656094" class="blue-brd-btn">联系我</a>
 						</div>
 					</div>
@@ -76,7 +77,6 @@
 		</div>
 	</div>
 	<!--===================== End of Slider ========================-->
-	
 	<!--===================== Last Mews ========================-->
 	<div class="container">
 		<div class="row">
@@ -192,5 +192,65 @@
 <script src="../assets/js/lib/slick.min.js"></script>
 <script src="../assets/js/lib/css3-animate-it.js"></script>
 <script src="../assets/js/main.js"></script>
+<script>
+	$(function () {
+        var data = new FormData();
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                var data = JSON.parse(this.responseText);
+                var serverCount = 0;
+                if(data.error == 0){
+                    var res = data.msg;
+                    if(res.length < 3){
+                        serverCount = res;
+                    }else{
+                        serverCount = formatNum(res);
+                    }
+					$("#serverCount").html(serverCount);
+                }
+            }
+        });
+
+        xhr.open("GET", "/api/getServerCount");
+        xhr.setRequestHeader("Cache-Control", "no-cache");
+
+        xhr.send(data);
+    })
+
+    function formatNum(str){
+        var newStr = "";
+        var count = 0;
+
+        if(str.indexOf(".")==-1){
+            for(var i=str.length-1;i>=0;i--){
+                if(count % 3 == 0 && count != 0){
+                    newStr = str.charAt(i) + "," + newStr;
+                }else{
+                    newStr = str.charAt(i) + newStr;
+                }
+                count++;
+            }
+            str = newStr ; //自动补小数点后两位
+			return str;
+        }
+        else
+        {
+            for(var i = str.indexOf(".")-1;i>=0;i--){
+                if(count % 3 == 0 && count != 0){
+                    newStr = str.charAt(i) + "," + newStr;
+                }else{
+                    newStr = str.charAt(i) + newStr; //逐个字符相接起来
+                }
+                count++;
+            }
+            str = newStr + (str ).substr((str ).indexOf("."),3);
+            return str;
+        }
+    }
+</script>
 </body>
 </html>

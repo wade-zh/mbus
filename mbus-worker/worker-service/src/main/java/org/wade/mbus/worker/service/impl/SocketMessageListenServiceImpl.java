@@ -2,6 +2,7 @@ package org.wade.mbus.worker.service.impl;
 
 import com.rabbitmq.client.Channel;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.utils.DateUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.amqp.core.Message;
@@ -20,6 +21,7 @@ import sun.misc.BASE64Encoder;
 
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
+import java.util.Date;
 
 /**
  * socket消息监听器
@@ -44,6 +46,7 @@ public class SocketMessageListenServiceImpl implements IMessageListenerService {
             jedisUtil.setRedisConfig(redisConfig);
             boolean flag = jedisUtil.put(model.getTicket().toString(), 60, LanguageUtil.isChinese(model.getCode()) ? UrlUtil.getURLEncoderString(model.getCode().trim()) : model.getCode().trim());
             if (flag){
+                jedisUtil.incr("serverCount");
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
             }
         } catch (Exception e) {

@@ -3,12 +3,10 @@
 
 
 # 停止演示站点通知 #
-> 请各位下载安装部署服务，我提供的测试站点即日起关停，没办法，大流量影响到了我其他程序的作业，谢谢关注，如遇到安装上的问题可联系我QQ2175656094，仅提供支持，不代安装！
+> 请各位下载安装部署服务，由于我的服务器近期将要到期，所以可能随时关闭演示站点
 
-**安装说明：**  
-1、部署网站需要安装JRE 64位运行环境  
-2、部署验证码识别服务端需要安装JRE 32位运行环境  
-3、需要额外安装Redis以及RabbitMQ服务  
+
+安装教程请到此查看：[https://github.com/wade-zh/mbus/blob/master/mbus-docs/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md](https://github.com/wade-zh/mbus/blob/master/mbus-docs/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md "安装教程.md")
 
 
 > GitHub: [https://github.com/wade-zh/mbus  ](https://github.com/wade-zh/mbus   "https://github.com/wade-zh/mbus  ")

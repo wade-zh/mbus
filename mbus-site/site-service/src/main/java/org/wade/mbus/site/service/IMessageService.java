@@ -10,6 +10,5 @@ public interface IMessageService {
     HttpResp uploadAsync(byte[] bytes, Integer type);
     HttpResp getResult(String ticket);
     HttpResp update(CallMsgReq callMsgReq);
-
     HttpResp getServerCount();
 }
